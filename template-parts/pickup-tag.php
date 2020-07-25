@@ -4,9 +4,9 @@
     array(
       // 投稿タイプ.
       'post_type'      => 'post',
-      // 6件取得.
+      // ６件取得.
       'posts_per_page' => 6,
-      // pickupタグがついたもの.
+      // pickupタグが付いたもの.
       'tag'            => 'pickup',
       // 新しい順.
       'orderby'        => 'DESC',

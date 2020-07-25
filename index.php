@@ -43,48 +43,8 @@
         <p class="section-title-ja">− 制作実績 −</p><!-- /.section-title-ja -->
         <div class="section-content">
           <ul class="works-items">
-            <li class="works-item">
-              <figure class="works-item-img">
-                <a href="single.html">
-                  <img src="<?php echo esc_url(get_theme_file_uri('images/cresta-jyo-kyu.jpg')); ?>" alt="">
-                </a>
-              </figure><!-- /.works-item-img -->
-            </li><!-- /.works-item -->
-            <li class="works-item">
-              <figure class="works-item-img">
-                <a href="">
-                  <img src="images/salon-de-beaute.jpg" alt="">
-                </a>
-              </figure><!-- /.works-item-img -->
-            </li><!-- /.works-item -->
-            <li class="works-item">
-              <figure class="works-item-img">
-                <a href="">
-                  <img src="images/30daytrial.jpg" alt="">
-                </a>
-              </figure><!-- /.works-item-img -->
-            </li><!-- /.works-item -->
-            <li class="works-item">
-              <figure class="works-item-img">
-                <a href="">
-                  <img src="images/sobolon.jpg" alt="">
-                </a>
-              </figure><!-- /.works-item-img -->
-            </li><!-- /.works-item -->
-            <li class="works-item">
-              <figure class="works-item-img">
-                <a href="">
-                  <img src="images/ARROWSSS.jpg" alt="">
-                </a>
-              </figure><!-- /.works-item-img -->
-            </li><!-- /.works-item -->
-            <li class="works-item">
-              <figure class="works-item-img">
-                <a href="">
-                  <img src="images/cafe-saryo.jpg" alt="">
-                </a>
-              </figure><!-- /.works-item-img -->
-            </li><!-- /.works-item -->
+            <!-- pickup -->
+            <?php get_template_part('template-parts/pickup-tag'); ?>
           </ul><!-- /.works-items -->
           <button class="link-btn">
             <a href="<?php echo home_url('/works-list'); ?>">
