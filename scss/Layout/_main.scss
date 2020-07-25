@@ -1,0 +1,755 @@
+/* ----------------------- */
+/* ----------------------- */
+/* トップページ
+/* ----------------------- */
+.home{
+  /* ----------------------- */
+  /* ファーストビュー
+  /* ----------------------- */
+  .fv {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient( rgba(0, 64, 193, .5)),url(../images/fv.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    position: relative;
+    .fv-title-wrapper{
+      position: absolute;
+      top: 35%;
+      left: 10%;
+      color: #f5f5f5;
+      @include mq('sp'){
+        left: 10px;
+      }
+    }
+    .site-title{
+      font-size: 80px;
+      line-height: 1.1;
+      @include mq('sp'){
+        font-size: 48px;
+      }
+    }
+    .sub-title{
+      font-size: 24px;
+      letter-spacing: .04em;
+      padding-left: 10px;
+      @include mq('sp'){
+        font-size: 16px;
+      }
+    }
+    /* 誘導矢印 */
+    .arrows {
+      position: absolute;
+      top: 70%;
+      left: 49%;
+      transform: translateX(-50%);
+      height: 150px;
+      margin: 2em auto;
+      @include mq('sp'){
+        top: 63%;
+      }
+    }
+    .arrows .arrow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transform-origin: 50% 50%;
+      opacity: 0;
+    }
+    @keyframes arrow {
+      0% {
+        top: 30%;
+        opacity: 0;
+      }
+      70% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    .arrows .arrowfirst {
+      animation: arrow 2.5s ease-in-out infinite;
+    }
+    .arrows .arrowsecond {
+      animation: arrow 2.5s 1s ease-in-out infinite;
+    }
+    .arrows .arrow:before, .arrows .arrow:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      content: '';
+      width: 20px;
+      height: 2px;
+      background-color: $bgc;
+    }
+    .arrows .arrow:before {
+      transform: rotate(30deg) translateX(-39%);
+      transform-origin: top left;
+    }
+    .arrows .arrow:after {
+      transform: rotate(-30deg) translateX(39%);
+      transform-origin: top right;
+    }
+  }
+  /* ----------------------- */
+  /* aboutセクション
+  /* ----------------------- */
+  .section:first-of-type{
+    .section-content{
+      display: flex;
+      justify-content: center;
+      @include mq('sp'){
+        flex-direction: column;
+      }
+      .about-img{
+        max-width: 300px;
+        height: 100%;
+        box-shadow: 0px 2px 8px 0px rgba(4,0,0,.16);
+        @include mq('sp'){
+          max-width: 100%;
+          margin: 0 auto;
+        }
+      }
+      .about-content{
+        margin-left: 4vw;
+        width: 45%;
+        @include mq('sp'){
+          margin-left: 0;
+          width: 100%;
+        }
+      }
+      .about-message{
+        padding-bottom: 60px;
+        @include mq('sp'){
+          padding-top: 30px;
+        }
+      }
+    }
+  }
+  /* ----------------------- */
+  /* worksセクション
+  /* ----------------------- */
+  .works-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .works-item{
+    width: 320px;
+    margin: 0 auto 60px;
+    border: 2px solid rgb(220, 220, 220);
+    box-shadow: 0px 2px 8px 0px rgba(4,0,0,.16);
+    .works-item-img{
+      overflow: hidden;
+    }
+    img{
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      transition: 1s all;
+      &:hover{
+        transform: scale(1.1, 1.1);
+        transition: 1s all;
+      }
+    }
+  }
+  /* ----------------------- */
+  /* serviceセクション
+  /* ----------------------- */
+  .section:nth-of-type(3){
+    .section-content{
+      display: flex;
+      justify-content: space-between;
+      @include mq('sp'){
+        flex-direction: column;
+      }
+      .service-menu-icon, .service-title{
+        text-align: center;
+      }
+      .service-menu-icon{
+        padding-bottom: 8px;
+      }
+      .service-title{
+        font-size: 24px;
+        padding-bottom: 8px;
+      }
+    }
+    .service-menu{
+      width: 30%;
+      @include mq('sp'){
+        margin: 0 auto;
+        width: 100%;
+        padding-bottom: 56px;
+        &:last-child{
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+
+/* ----------------------- */
+/* ----------------------- */
+/* Aboutページ
+/* ----------------------- */
+.about{
+  /* ----------------------- */
+  /* ファーストビュー
+  /* ----------------------- */
+  .fv{
+    width: 100vw;
+    height: 500px;
+    position: relative;
+    background: linear-gradient(0deg, rgba(0, 64, 193, .7), rgba(0, 149, 193, .7));
+    background-size: 400% 400%;
+    animation: AnimationName 14s ease infinite;
+    @include mq('sp'){
+      height: 350px;
+    }
+    @keyframes AnimationName {
+      0%{background-position:50% 0%}
+      50%{background-position:50% 100%}
+      100%{background-position:50% 0%}
+    }
+    .fv-title-wrapper{
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      color: $bgc;
+      @include mq('sp'){
+        left: 10px;
+      }
+    }
+    .site-title{
+      font-size: 80px;
+      line-height: 1.1;
+      @include mq('sp'){
+        font-size: 48px;
+      }
+    }
+    .sub-title{
+      font-size: 24px;
+      letter-spacing: .04em;
+      padding-left: 10px;
+      @include mq('sp'){
+        font-size: 16px;
+      }
+    }
+  }
+  /* ----------------------- */
+  /* profileセクション
+  /* ----------------------- */
+  .section:first-of-type{
+    .section-content{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include mq('tab'){
+        flex-direction: column;
+      }
+      @include mq('sp'){
+        flex-direction: column;
+      }
+    }
+    .profile-img{
+      max-width: 220px;
+      @include mq('tab'){
+        margin: 0 auto;
+      }
+      @include mq('sp'){
+        margin: 0 auto;
+      }
+      img{
+        border-radius: 50%;
+      }
+    }
+    .profile-content{
+      margin-left: 4vw;
+      width: 36%;
+      @include mq('tab'){
+        width: 60%;
+        margin: 0 auto;
+      }
+      @include mq('sp'){
+        margin-left: 0;
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+    .profile-message{
+      @include mq('tab'){
+        padding-top: 50px;
+      }
+      @include mq('sp'){
+        font-size: 14px;
+        padding-top: 50px;
+        padding-bottom: 0;
+      }
+    }
+  }
+  /* ----------------------- */
+  /* skills、environmentセクション
+  /* ----------------------- */
+  .section:nth-of-type(2){
+    background-color: $bgc;
+    padding-top: 0;
+    @include mq('sp'){
+      padding-bottom: 38px;
+    }
+    .section-inner{
+      @include mq('pc'){
+        max-width: 800px;
+      }
+    }
+    .section-content{
+      display: flex;
+      justify-content: space-between;
+      @include mq('tab'){
+        justify-content: space-around;
+        margin: 0 auto;
+      }
+      @include mq('sp'){
+        flex-direction: column;
+      }
+    }
+    .skills{
+      padding: 8px;
+      @include mq('sp'){
+        padding: 0;
+      }
+    }
+    .skill-head, .qualification-head, .environment-head{
+      display: inline-block;
+      font-size: 20px;
+      font-weight: $fw-base;
+      border-bottom: 2px solid $text-head;
+      margin-bottom: 8px;
+      @include mq('sp'){
+        font-size: 18px;
+      }
+    }
+    .skill-item{
+      padding-left: 8px;
+      padding-bottom: 8px;
+      margin-bottom: 40px;
+      @include mq('sp'){
+        font-size: 14px;
+      }
+    }
+    .skill-item a{
+      color: $text-link;
+      border-bottom: 2px solid $text-link;
+      font-weight: bold;
+      &:hover {
+        transition: 0.8s;
+        opacity: 0.5;
+      }
+    }
+    .qualification-item{
+      padding-left: 8px;
+      padding-bottom: 8px;
+    }
+    .environment{
+      padding: 8px;
+      @include mq('sp'){
+        margin-top: 36px;
+        padding: 0;
+      }
+    }
+    .environment-item{
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 320px;
+      padding-left: 8px;
+      padding-bottom: 8px;
+      @include mq('sp'){
+        max-width: 100%;
+        font-size: 14px;
+      }
+    }
+    .environment-list{
+      width: 40%;
+      font-weight: $fw-base;
+    }
+    .environment-text{
+      width: 60%;
+    }
+  }
+  /* ----------------------- */
+  /* careerセクション
+  /* ----------------------- */
+  .section:nth-of-type(3){
+    padding: 0;
+    @include mq('sp'){
+      padding-bottom: 60px;
+    }
+    .section-inner{
+      @include mq('pc'){
+        max-width: 800px;
+      }
+    }
+    .section-content{
+      margin: 0 auto;
+      @include mq('tab'){
+        width: 84%;
+      }
+      @include mq('sp'){
+        width: 100%;
+      }
+    }
+    .career-head{
+      display: inline-block;
+      font-size: 20px;
+      font-weight: $fw-base;
+      margin-bottom: 8px;
+      border-bottom: 2px solid $text-head;
+      @include mq('sp'){
+        font-size: 18px;
+      }
+    }
+    .career{
+      margin: 0 auto;
+      padding: 8px;
+      @include mq('sp'){
+        font-size: 14px;
+        padding: 0;
+      }
+    }
+    .career-item{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 8px;
+      @include mq('sp'){
+        flex-direction: column;
+      }
+    }
+    .career-list{
+      width: 15%;
+      font-size: 18px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      &:first-of-type{
+        padding-top: 40px;
+        @include mq('sp'){
+          padding-top: 0;
+        }
+      }
+      @include mq('sp'){
+        width: 100%;
+        padding-bottom: 0;
+      }
+    }
+    .career-text{
+      width: 85%;
+      padding-left: 40px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-left: 2px solid $text-head;
+      position: relative;
+      &:first-of-type{
+        padding-top: 40px;
+        @include mq('sp'){
+          padding-top: 20px;
+        }
+      }
+      &:last-of-type{
+        height: 40px;
+      }
+      &::before{
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: $text-link;
+        position: absolute;
+        top: 26px;
+        left: -9px;
+      }
+      @include mq('sp'){
+        width: 100%;
+      }
+      a{
+        color: $text-link;
+        font-weight: $fw-base;
+        border-bottom: 2px solid $text-link;
+        &:hover {
+          transition: 0.8s;
+          opacity: 0.5;
+        }
+      }
+    }
+    .career-text:first-of-type::before{
+      top: 46px;
+      @include mq('sp'){
+        top: 26px;
+      }
+    }
+  }
+  /* ----------------------- */
+  /* futureセクション
+  /* ----------------------- */
+  .section:nth-of-type(4){
+    .section-inner{
+      max-width: 780px;
+      @include mq('tab'){
+        max-width: 90vw;
+      }
+    }
+    .future-title{
+      display: inline-block;
+      font-size: 20px;
+      font-weight: $fw-base;
+      margin-bottom: 8px;
+      border-bottom: 2px solid $text-head;
+      @include mq('sp'){
+        font-size: 18px;
+      }
+    }
+    .future{
+      padding: 0 8px;
+      @include mq('sp'){
+        font-size: 14px;
+        padding: 0;
+      }
+    }
+  }
+}
+
+
+/* ----------------------- */
+/* ----------------------- */
+/* works-listページ
+/* ----------------------- */
+.works-list, .works-list-ws, .works-list-wp, .works-list-ot{
+  .l-section{
+    display: flex;
+    padding-top: 20px;
+    @include mq('sp'){
+      flex-direction: column;
+    }
+    /* ----------------------- */
+    /* 絞り込みナビゲーション
+    /* ----------------------- */
+    .left-nav{
+      @include mq('sp'){
+        max-width: 320px;
+      }
+      &::before{
+        content: "";
+        position: fixed;
+        z-index: -10;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height:100%;
+        background-color: #EEE5E9;
+        @include mq('sp'){
+          width: 100vw;
+          height: 100px;
+          top: 70px;
+          z-index: 10;
+        }
+      }
+    }
+    .left-nav-list{
+      position: fixed;
+      padding: 20vh 0 0 50px;
+      @include mq('sp'){
+        top: 70px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 0 0 8vw;
+        margin-top: 6px;
+        z-index: 10;
+      }
+    }
+    .left-nav-item{
+      margin-bottom: 32px;
+      position: relative;
+      @include mq('sp'){
+        flex-basis: 120px;
+        margin: 0 10px;
+      }
+      i{
+        position: absolute;
+        top: 50%;
+        left: -12px;
+        transform: translateY(-50%);
+      }
+      a{
+        display: inline-block;
+        color:$textc;
+        font-size: 20px;
+        padding: 10px;
+        @include mq('sp'){
+          font-size: 16px;
+        }
+      }
+      a:hover{
+        opacity: .5;
+        transition: all .5s;
+      }
+    }
+    .section:first-of-type{
+      background-color: $bgc;
+      width: 100vw;
+      text-align: center;
+      padding-top: 70px;
+      margin-left: 250px;
+      @include mq('sp'){
+        padding-top: 150px;
+        padding-bottom: 0;
+        margin-left: 0;
+      }
+    }
+    /* ----------------------- */
+    /* worksセクション
+    /* ----------------------- */
+    .works-items{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .works-item{
+      max-width: 500px;
+      margin: 0 auto 60px;
+      border: 2px solid rgb(220, 220, 220);
+      box-shadow: 0px 2px 8px 0px rgba(4,0,0,.16);
+    }
+    .works-item-img:hover{
+      opacity: .8;
+      transition: all .5s;
+    }
+    img{
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+  }
+  /* ----------------------- */
+  /* contactセクション
+  /* ----------------------- */
+  .section:last-of-type{
+    margin-left: 250px;
+    @include mq('sp'){
+      margin-left: 0;
+    }
+  }
+}
+
+
+/* ----------------------- */
+/* ----------------------- */
+/* contactページ
+/* ----------------------- */
+.contact{
+  /* ----------------------- */
+  /* ファーストビュー
+  /* ----------------------- */
+  .fv{
+    width: 100vw;
+    height: 500px;
+    position: relative;
+    background: linear-gradient(0deg, rgba(0, 64, 193, .7), rgba(0, 149, 193, .7));
+    background-size: 400% 400%;
+    animation: AnimationName 14s ease infinite;
+    @include mq('sp'){
+      height: 350px;
+    }
+    @keyframes AnimationName {
+      0%{background-position:50% 0%}
+      50%{background-position:50% 100%}
+      100%{background-position:50% 0%}
+    }
+    .fv-title-wrapper{
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      color: $bgc;
+      @include mq('sp'){
+        left: 10px;
+      }
+    }
+    .site-title{
+      font-size: 80px;
+      line-height: 1.1;
+      @include mq('sp'){
+        font-size: 48px;
+      }
+    }
+    .sub-title{
+      font-size: 24px;
+      letter-spacing: .04em;
+      padding-left: 10px;
+      @include mq('sp'){
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+
+/* ----------------------- */
+/* ----------------------- */
+/* singleページ
+/* ----------------------- */
+.single{
+  .section:first-of-type{
+    padding-top: 100px;
+    .section-title{
+      font-family: $ff-base;
+      font-size: 24px;
+      margin-top: 100px;
+      @include mq('sp'){
+        font-size: 18px;
+        margin-top: 50px;
+      }
+    }
+    .section-explanation{
+      max-width: 640px;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      padding-top: 80px;
+      @include mq('sp'){
+        padding-top: 50px;
+        padding-bottom: 0;
+      }
+    }
+    .explanation-list{
+      width: 35%;
+      font-size: 18px;
+      font-weight: $fw-base;
+      padding-bottom: 40px;
+      @include mq('sp'){
+        font-size: 14px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+  .explanation-text {
+    width: 65%;
+    padding-bottom: 40px;
+    @include mq('sp'){
+      font-size: 14px;
+      padding-bottom: 20px;
+    }
+    a{
+      color: $text-link;
+      border-bottom: 2px solid $text-link;
+      font-weight: $fw-base;
+      &:hover {
+        transition: 0.8s;
+        opacity: 0.5;
+      }
+    }
+  }
+}

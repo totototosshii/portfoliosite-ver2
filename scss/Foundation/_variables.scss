@@ -1,0 +1,51 @@
+// 背景色
+$bgc:#eaf9fb;
+
+// テキストカラー
+$textc: #30323D;
+
+// テキストリンク
+$text-link: #037BFE;
+
+// テキスト下線
+$text-head: #05BBDD;
+
+// ボタンカラー
+$btn-bgc: #00BBDD;
+
+// フォントスタイル
+$ff-gothic: 'Noto Sans JP', sans-serif;
+$fz-base: 16px;
+$ff-base: $ff-gothic;
+$fw-base: 500;
+$lh-base: 1.6;
+$ls-base: .08em;
+
+// コンテンツ幅
+$layout-width-inner: 1180px;
+
+// ブレークポイント
+$breakpoints: (
+  "sp": "(max-width: 767px)",
+  "tab": "(min-width: 768px) and (max-width: #{$layout-width-inner - 1px})",
+  "pc": "(min-width: #{$layout-width-inner})"
+);
+
+// ミックスイン・メディアクエリ
+@mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints, $breakpoint)}  {
+    @content;
+  }
+}
+
+// 割り算					   分子				   分母
+@function division($numerator, $denominator) {
+  @return $numerator / $denominator;
+}
+// （例）line-height: division(34,16);→行間/フォントサイズ
+// （例）letter-spacing: division(34,1000);→文字間/1000em
+
+// vw計算
+@function vw($width, $px) {
+  @return $px / ($width - 1) * 100vw;
+}
