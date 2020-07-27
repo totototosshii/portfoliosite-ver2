@@ -49,8 +49,8 @@ Template Name: プロフィール
             </ul><!-- /.skill-item -->
             <p class="qualification-head">資格</p>
             <ul class="qualification-item">
-              <li>MOS Excel 365&2019</li>
-              <li>MOS Word 2016</li>
+              <li>Microsoft Office Specialist Excel 365&2019</li>
+              <li>Microsoft Office Specialist Word 2016</li>
             </ul><!-- /.qualification -->
           </div><!-- /.skills -->
           <div class="environment">
