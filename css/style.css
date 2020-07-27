@@ -1755,25 +1755,22 @@ body.noscroll {
 @media (max-width: 767px) {
   .works-list .l-section .section:first-of-type, .works-list-ws .l-section .section:first-of-type, .works-list-wp .l-section .section:first-of-type, .works-list-ot .l-section .section:first-of-type {
     padding-top: 200px;
-    padding-bottom: 0;
     margin-left: 0;
   }
 }
 
 .works-list .l-section .works-items, .works-list-ws .l-section .works-items, .works-list-wp .l-section .works-items, .works-list-ot .l-section .works-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  gap: 75px;
+  -ms-grid-columns: (minmax(286px, 500px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(286px, 500px));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .works-list .l-section .works-item, .works-list-ws .l-section .works-item, .works-list-wp .l-section .works-item, .works-list-ot .l-section .works-item {
-  max-width: 500px;
-  margin: 0 auto 60px;
   border: 2px solid gainsboro;
   -webkit-box-shadow: 0px 2px 8px 0px rgba(4, 0, 0, 0.16);
           box-shadow: 0px 2px 8px 0px rgba(4, 0, 0, 0.16);
@@ -1790,6 +1787,12 @@ body.noscroll {
   height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .works-list .l-section img, .works-list-ws .l-section img, .works-list-wp .l-section img, .works-list-ot .l-section img {
+    height: 300px;
+  }
 }
 
 .works-list .section:last-of-type, .works-list-ws .section:last-of-type, .works-list-wp .section:last-of-type, .works-list-ot .section:last-of-type {

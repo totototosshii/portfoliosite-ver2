@@ -11,11 +11,11 @@
     <meta property="og:site_name" content="<?php bloginfo('name'); ?>">
     <meta property="og:description" content="<?php bloginfo('description'); ?>">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="google-site-verification" content="jwx1KoPFlEZU1ELY9fcc927Wx7vSHi5hoaKkAZFwPd4" />
     <!-- Googlefont -->
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/cba31e06f6.js" crossorigin="anonymous"></script>
-    <meta name="google-site-verification" content="jwx1KoPFlEZU1ELY9fcc927Wx7vSHi5hoaKkAZFwPd4" />
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
