@@ -14,10 +14,13 @@
         <h3 class="section-title">Contact</h3><!-- /.section-title -->
         <p class="section-title-ja">− お問い合わせ −</p><!-- /.section-title-ja -->
         <div class="section-content">
-        <?php if ( have_posts() ) : ?>
-          <?php while ( have_posts() ) : ?>
-            <?php the_post(); ?>
-              <?php the_content(); ?>
+          <p class="contact-read">
+            制作のご依頼やご相談(無料)など、お気軽にご連絡ください。
+          </p><!-- /.contact-read -->
+          <?php if ( have_posts() ) : ?>
+            <?php while ( have_posts() ) : ?>
+              <?php the_post(); ?>
+                <?php the_content(); ?>
             <?php endwhile; ?>
           <?php endif; ?>
         </div><!-- /.about-content -->

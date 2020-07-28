@@ -5,7 +5,7 @@
     <p class="section-title-ja">− お問い合わせ −</p><!-- /.section-title-ja -->
     <div class="section-content">
       <p class="contact-read">
-        制作のご依頼やご相談(無料)など、お気軽にご連絡下さい。
+        制作のご依頼やご相談(無料)など、お気軽にご連絡ください。
       </p><!-- /.contact-read -->
       <button class="link-btn">
         <a href="<?php echo home_url('/contact'); ?>">
