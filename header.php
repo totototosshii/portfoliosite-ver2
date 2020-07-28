@@ -7,7 +7,7 @@
     <meta property="og:title" content="Toshiki Portfolio">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tosshii-portfolio.com">
-    <meta property="og:image" content="https://tosshii-portfolio.com/images/og-img.png">
+    <meta property="og:image" content="<?php echo esc_url(get_theme_file_uri('images/og-img.png')); ?>">
     <meta property="og:site_name" content="<?php bloginfo('name'); ?>">
     <meta property="og:description" content="<?php bloginfo('description'); ?>">
     <meta name="twitter:card" content="summary_large_image">
