@@ -13,6 +13,12 @@
     background-size: cover;
     background-position: 0 0;
     position: relative;
+    @include mq('tab'){
+      background-position: 50% 0;
+    }
+    @include mq('sp'){
+      background-position: 55% 0;
+    }
     .fv-title-wrapper{
       position: absolute;
       top: 35%;

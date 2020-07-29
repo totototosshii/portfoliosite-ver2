@@ -834,6 +834,18 @@ body.noscroll {
   /* 誘導矢印 */
 }
 
+@media (min-width: 768px) and (max-width: 1179px) {
+  .home .fv {
+    background-position: 50% 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .home .fv {
+    background-position: 55% 0;
+  }
+}
+
 .home .fv .fv-title-wrapper {
   position: absolute;
   top: 35%;
