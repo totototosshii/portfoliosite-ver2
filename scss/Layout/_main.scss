@@ -9,16 +9,8 @@
   .fv {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient( rgba(0, 64, 193, .5)),url(../images/fv.jpg) no-repeat;
-    background-size: cover;
-    background-position: 0 0;
+    background: linear-gradient( rgba(0, 64, 193, .5)),url(../images/fv.jpg) no-repeat center center/cover;
     position: relative;
-    @include mq('tab'){
-      background-position: 50% 0;
-    }
-    @include mq('sp'){
-      background-position: 55% 0;
-    }
     .fv-title-wrapper{
       position: absolute;
       top: 35%;
