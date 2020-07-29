@@ -23,7 +23,7 @@
                 <?php the_content(); ?>
             <?php endwhile; ?>
           <?php endif; ?>
-        </div><!-- /.about-content -->
+        </div><!-- /.section-content -->
       </div><!-- /.section-inner -->
     </section><!-- /.section -->
   </main>

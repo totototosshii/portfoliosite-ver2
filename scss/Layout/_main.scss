@@ -692,6 +692,15 @@
       }
     }
   }
+  .privacy-policy a{
+    color: $text-link;
+    font-weight: $fw-base;
+    border-bottom: 2px solid $text-link;
+    &:hover {
+      transition: 0.8s;
+      opacity: 0.5;
+    }
+  }
 }
 
 

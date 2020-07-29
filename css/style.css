@@ -1880,6 +1880,18 @@ body.noscroll {
   }
 }
 
+.contact .privacy-policy a {
+  color: #037BFE;
+  font-weight: 500;
+  border-bottom: 2px solid #037BFE;
+}
+
+.contact .privacy-policy a:hover {
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  opacity: 0.5;
+}
+
 /* ----------------------- */
 /* ----------------------- */
 /* singleページ
