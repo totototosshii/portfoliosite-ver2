@@ -280,6 +280,9 @@
       }
     }
     .profile-message{
+      span{
+        font-weight: bold;
+      }
       @include mq('tab'){
         padding-top: 50px;
       }
