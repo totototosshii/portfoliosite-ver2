@@ -452,6 +452,9 @@
       padding-bottom: 20px;
       border-left: 2px solid $text-head;
       position: relative;
+      @include mq('sp'){
+        width: 100%;
+      }
       &:first-of-type{
         padding-top: 40px;
         @include mq('sp'){
@@ -472,9 +475,6 @@
         top: 26px;
         left: -9px;
       }
-      @include mq('sp'){
-        width: 100%;
-      }
       a{
         color: $text-link;
         font-weight: $fw-base;
@@ -482,6 +482,12 @@
         &:hover {
           transition: 0.8s;
           opacity: 0.5;
+        }
+      }
+      span{
+        font-size: 20px;
+        @include mq('sp'){
+          font-size: 18px;
         }
       }
     }

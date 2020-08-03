@@ -1536,6 +1536,12 @@ body.noscroll {
   position: relative;
 }
 
+@media (max-width: 767px) {
+  .about .section:nth-of-type(3) .career-text {
+    width: 100%;
+  }
+}
+
 .about .section:nth-of-type(3) .career-text:first-of-type {
   padding-top: 40px;
 }
@@ -1562,12 +1568,6 @@ body.noscroll {
   left: -9px;
 }
 
-@media (max-width: 767px) {
-  .about .section:nth-of-type(3) .career-text {
-    width: 100%;
-  }
-}
-
 .about .section:nth-of-type(3) .career-text a {
   color: #037BFE;
   font-weight: 500;
@@ -1578,6 +1578,16 @@ body.noscroll {
   -webkit-transition: 0.8s;
   transition: 0.8s;
   opacity: 0.5;
+}
+
+.about .section:nth-of-type(3) .career-text span {
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  .about .section:nth-of-type(3) .career-text span {
+    font-size: 18px;
+  }
 }
 
 .about .section:nth-of-type(3) .career-text:first-of-type::before {
