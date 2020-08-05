@@ -20,7 +20,7 @@
       position: relative;
     }
   }
-  /* ハンバーガーボタン */
+  // ハンバーガーボタン
   .drawer-btn{
     display: block;
     position: absolute;
@@ -64,7 +64,7 @@
       bottom: 0;
     }
   }
-  /* ハンバーガーボタン下のMenuとCloseのスタイル */
+  // ハンバーガーボタン下のMenuとCloseのスタイル
   .drawer_text {
     width: 100%;
     position: absolute;
@@ -140,7 +140,7 @@
   }
 }
 
-/* sp版works-listページ背景透過無し */
+// sp版works-listページ背景透過無し
 .works-list, .works-list-ws, .works-list-wp, .works-list-ot{
   @include mq('sp'){
     .header{
@@ -149,7 +149,7 @@
   }
 }
 
-/* jsで変更される箇所 */
+// jsで変更される箇所
 .header-links.is-active{
   left: 0;
 }

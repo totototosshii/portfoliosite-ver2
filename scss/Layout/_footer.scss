@@ -13,7 +13,7 @@
   }
 }
 
-/* スクロールトップボタン */
+// スクロールトップボタン
 .scrollTop {
   position: relative;
   position: fixed;
@@ -37,6 +37,7 @@
   }
 }
 
+// jsで変更される箇所
 .is-fadein {
   display: block;
   cursor: pointer;

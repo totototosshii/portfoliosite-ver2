@@ -1,3 +1,6 @@
+// サイトを構成する上で、デザインの基本の下地、土台となるスタイルを定義
+// 基本的にタグ自体にスタイルを定義すること
+
 body{
   background-color: $bgc;
   color:$textc;
@@ -11,56 +14,6 @@ img{
   max-width: 100%;
 }
 
-/* ----------------------- */
-/* ロゴ、h1、h2、h3、copyright
-/* ----------------------- */
-.header-logo, .site-title, .section-title, .copyright{
-  font-family: 'Caveat', cursive;
-}
-
-/* ----------------------- */
-/* sectionのベースレイアウト
-/* ----------------------- */
-.section{
-  padding: 50px 0;
-  &:first-of-type{
-    padding-top: 50px;
-  }
-  &:nth-of-type(2), &:last-of-type{
-    background-color: #EEE5E9;
-  }
-  /* ----------------------- */
-  /* sectionの見出し
-  /* ----------------------- */
-  .section-title{
-    font-size: 64px;
-    text-align: center;
-    line-height: 1;
-    @include mq('sp'){
-      font-size: 40px;
-    }
-  }
-  .section-title-ja{
-    text-align: center;
-    padding-bottom: 64px;
-    @include mq('tab'){
-      padding-bottom: 48px;
-    }
-    @include mq('sp'){
-      font-size: 14px;
-      padding-bottom: 48px;
-    }
-  }
-}
-/* ----------------------- */
-/* contactセクションの見出し下テキスト
-/* ----------------------- */
-.contact-read{
-  text-align: center;
-  padding-bottom: 60px;
-  @include mq('sp'){
-    text-align: left;
-    font-size: 14px;
-    padding-bottom: 48px;
-  }
+a:hover{
+  transition: all .5s;
 }
