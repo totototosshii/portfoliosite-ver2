@@ -43,9 +43,9 @@ Template Name: プロフィール
             <p class="skill-head">スキル</p>
             <ul class="skill-item">
               <li>HTML、CSS、SCSS、Bootstrap、</li>
-              <li>JavaScript、jQuery、PHP、MySQL、</li>
+              <li>JavaScript、jQuery、PHP、</li>
               <li>WordPress、<a href="https://github.com/totototosshii?tab=repositories/" target="_blank" rel="noopener noreferrer">GitHub</a>、SourceTree、</li>
-              <li>Photoshop、Xd、Figma</li>
+              <li>Photoshop、XD、Figma</li>
             </ul><!-- /.skill-item -->
             <p class="qualification-head">資格</p>
             <ul class="qualification-item">
@@ -65,8 +65,8 @@ Template Name: プロフィール
               <dt class="environment-list">FTP：</dt><!-- /.environment-list -->
               <dd class="environment-text">FileZilla</dd><!-- /.environment-text -->
               <dt class="environment-list">デザイン：</dt><!-- /.environment-list -->
-              <dd class="environment-text">Xd / Figma</dd><!-- /.environment-text -->
-              <dt class="environment-list">画像編集：</dt><!-- /.environment-list -->
+              <dd class="environment-text">XD / Figma</dd><!-- /.environment-text -->
+              <dt class="environment-list">画像加工：</dt><!-- /.environment-list -->
               <dd class="environment-text">Photoshop</dd><!-- /.environment-text -->
               <dt class="environment-list">ローカル環境：</dt><!-- /.environment-list -->
               <dd class="environment-text">Local by Flywheel</dd>
@@ -91,7 +91,7 @@ Template Name: プロフィール
                 <dt class="career-list">2020年</dt><!-- /.career-list -->
                 <dd class="career-text">プログラミングスクール以外にも学習の幅を広げる。<br><a href="https://www.jun-akiba.com/category/%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88/" target="_blank" rel="noopener noreferrer">アロキャン</a>への参加、<a href="https://www.daily-trial.com/" target="_blank" rel="noopener noreferrer">デイトラ</a> 、<a href="https://crestadesign.org/" target="_blank" rel="noopener noreferrer">クリ★スタ</a>、<a href="https://ninjacode.work/practice/" target="_blank" rel="noopener noreferrer">忍者CODE</a>などの教材に取り組みながらポートフォリオの作成に取り掛かりました。</dd><!-- /.career-text -->
                 <dt class="career-list">現在</dt><!-- /.career-list -->
-                <dd class="career-text">ポートフォリオ作成と並行して転職活動中。<br><span>一緒に働かせて頂ける仙台の制作会社を探しております！！</span></dd><!-- /.career-text -->
+                <dd class="career-text">ポートフォリオ作成と並行して転職活動中。<br><span>一緒に働かせて頂けるWeb制作会社を探しております！！</span></dd><!-- /.career-text -->
             </dl><!-- /.career-item -->
           </div><!-- /.career -->
         </div><!-- /.section-content -->
