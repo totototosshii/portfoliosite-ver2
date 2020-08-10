@@ -5,8 +5,8 @@
   </footer><!-- /.footer -->
 
   <!-- スクロールトップボタン -->
-  <div id="scrollTop" class="scrollTop"><i class="fas fa-chevron-up fa-lg"></i></div>
-  
+  <button id="scrollTop" class="scrollTop"><i class="fas fa-chevron-up fa-lg"></i></button>
+
   <?php wp_footer(); ?>
   </body><!-- /.home -->
 </html>
