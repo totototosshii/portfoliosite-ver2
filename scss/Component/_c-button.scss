@@ -28,3 +28,34 @@
     margin: 0 auto;
   }
 }
+
+
+// スクロールトップボタン
+.scrollTop {
+  position: relative;
+  position: fixed;
+  right: 8px;
+  bottom: 8px;
+  width: 50px;
+  height: 50px;
+  background: $btn-bgc;
+  border-radius: 50%;
+  display: none;
+  &:hover {
+    transform: translateY(-5px);
+    transition: all .7s;
+  }
+  .fa-chevron-up {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+  }
+}
+
+// jsで変更される箇所
+.is-fadein {
+  display: block;
+  cursor: pointer;
+}
