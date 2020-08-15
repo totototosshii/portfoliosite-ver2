@@ -4,11 +4,10 @@
     line-height: 70px;
     background-color: rgb(48, 50, 61);
     color: #f5f5f5;
-    letter-spacing: .08em;
   }
   @include mq('sp'){
     .copyright{
-      font-size: 12px;
+      font-size: 13px;
     }
   }
 }
