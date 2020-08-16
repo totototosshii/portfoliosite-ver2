@@ -1364,7 +1364,7 @@ body.noscroll {
 
 @media (min-width: 1180px) {
   .about .section:nth-of-type(3) .section-inner {
-    max-width: 800px;
+    max-width: 810px;
   }
 }
 
@@ -1390,6 +1390,12 @@ body.noscroll {
   font-weight: 500;
   margin-bottom: 8px;
   border-bottom: 2px solid #05BBDD;
+}
+
+@media (min-width: 1180px) {
+  .about .section:nth-of-type(3) .career-head {
+    margin-left: 8px;
+  }
 }
 
 @media (max-width: 767px) {

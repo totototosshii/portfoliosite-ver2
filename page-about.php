@@ -83,9 +83,9 @@ Template Name: プロフィール
             <p class="career-head">経歴</p><!-- /.career-head -->
             <dl class="career-item">
               <dt class="career-list">2008年</dt><!-- /.career-list -->
-                <dd class="career-text">工業高校卒業後、地元の製造業に就職し工場勤務。<br>主に工作機械のオペレーター業務を担当する。リーマンショック回復後からは３交代勤務で主力製品の生産に携わる。</dd><!-- /.career-text -->
+                <dd class="career-text">工業高校卒業後、地元の製造業に就職し工場勤務。<br>主に工作機械のオペレーター業務を担当し、空気圧制御機器の部品を加工。一時期は切削工具管理を兼務し書類作成業務を行う。<br>リーマンショック回復後からは３交代勤務で主力製品の生産に携わる。</dd><!-- /.career-text -->
                 <dt class="career-list">2018年</dt><!-- /.career-list -->
-                <dd class="career-text">体調が優れない事が多くなり、次第に今後の働き方を考えるようになる。<br>これから先はPCスキルを身に付けた方が良さそうだと思い、IT業界の情報を収集しながらタイピング練習を開始。Web制作領域に目標を定める。</dd><!-- /.career-text -->
+                <dd class="career-text">体調が優れない事が多くなり、次第に今後の働き方を考えるようになる。<br>調べる過程でWeb制作に興味を持ち、まずはPCスキルを身につけるためにタイピング練習を開始。</dd><!-- /.career-text -->
                 <dt class="career-list">2019年</dt><!-- /.career-list -->
                 <dd class="career-text">交代勤務を続けながら平日は30分〜１時間、休日は３時間の独学。<br>HTML/CSSをProgate、ドットインストールで独学し、初めての言語に難しさを痛感した反面、思い通りの結果が表示させられた時の喜びを実感。<br>学習環境と転職先を考慮し、仙台に拠点を移す事を決意。<br>10月に退職後、プログラミングスクールに通う。</dd><!-- /.career-text -->
                 <dt class="career-list">2020年</dt><!-- /.career-list -->

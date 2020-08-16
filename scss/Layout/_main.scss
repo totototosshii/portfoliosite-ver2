@@ -447,7 +447,7 @@
     }
     .section-inner{
       @include mq('pc'){
-        max-width: 800px;
+        max-width: 810px;
       }
     }
     .section-content{
@@ -465,6 +465,9 @@
       font-weight: $fw-base;
       margin-bottom: 8px;
       border-bottom: 2px solid $text-head;
+      @include mq('pc'){
+        margin-left: 8px;
+      }
       @include mq('sp'){
         font-size: 18px;
       }
