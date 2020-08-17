@@ -314,7 +314,7 @@
       }
     }
     .profile-img{
-      max-width: 220px;
+      max-width: 230px;
       @include mq('tab'){
         margin: 0 auto;
       }
@@ -327,9 +327,9 @@
     }
     .profile-content{
       margin-left: 4vw;
-      width: 36%;
+      width: 45%;
       @include mq('tab'){
-        width: 60%;
+        width: 68%;
         margin: 0 auto;
       }
       @include mq('sp'){
@@ -352,34 +352,42 @@
     }
   }
   // -----------------------
-  // skills、environmentセクション
+  // 作業環境・資格・スキルセクション
   // -----------------------
   .section:nth-of-type(2){
     background-color: $bgc;
     padding-top: 0;
-    @include mq('sp'){
-      padding-bottom: 38px;
-    }
     .section-inner{
-      @include mq('pc'){
-        max-width: 800px;
-      }
-    }
-    .section-content{
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       @include mq('tab'){
-        justify-content: space-around;
-        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
       }
       @include mq('sp'){
         flex-direction: column;
       }
     }
-    .skills{
-      padding: 8px;
+    .section-content{
+      padding: 0 15px;
+      @include mq('tab'){
+        &:first-of-type{
+          width: 75%;
+        }
+      }
       @include mq('sp'){
         padding: 0;
+      }
+      &:last-of-type{
+        width: 55%;
+        @include mq('tab'){
+          width: 72%;
+          padding-top: 30px;
+        }
+        @include mq('sp'){
+          width: 100%;
+          padding-top: 30px;
+        }
       }
     }
     .skill-head, .qualification-head, .environment-head{
@@ -387,67 +395,327 @@
       font-size: 20px;
       font-weight: $fw-base;
       border-bottom: 2px solid $text-head;
-      margin-bottom: 8px;
+      margin-bottom: 12px;
       @include mq('sp'){
         font-size: 18px;
       }
     }
-    .skill-item{
-      padding-left: 8px;
-      padding-bottom: 8px;
-      margin-bottom: 40px;
-      @include mq('sp'){
-      }
-    }
-    .skill-item a{
-      color: $text-link;
-      border-bottom: 2px solid $text-link;
-      font-weight: bold;
-      &:hover {
-        transition: 0.8s;
-        opacity: 0.5;
-      }
-    }
-    .qualification-item{
-      padding-left: 8px;
-      padding-bottom: 8px;
-    }
     .environment{
-      padding: 8px;
+      margin-bottom: 30px;
       @include mq('sp'){
         margin-top: 36px;
         padding: 0;
       }
-    }
-    .environment-item{
-      display: flex;
-      flex-wrap: wrap;
-      max-width: 320px;
-      padding-left: 8px;
-      padding-bottom: 8px;
-      @include mq('sp'){
-        max-width: 100%;
+      @include mq('tab'){
+        padding: 0 15px;
+      }
+      .environment-item{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 370px;
+        padding-left: 5px;
+        padding-bottom: 8px;
+        @include mq('sp'){
+          max-width: 100%;
+        }
+      }
+      .environment-list{
+        width: 54%;
+        font-weight: bold;
+      }
+      .environment-text{
+        width: 46%;
       }
     }
-    .environment-list{
-      width: 40%;
-      font-weight: bold;
+    .qualification{
+      @include mq('tab'){
+        padding: 0 15px;
+      }
+      .qualification-item{
+        padding-left: 5px;
+        padding-bottom: 8px;
+      }
     }
-    .environment-text{
-      width: 60%;
+    .skill-items{
+      display: flex;
+      flex-wrap: wrap;
+      @include mq('sp'){
+        justify-content: space-around;
+      }
+      .skill-item{
+        text-align: center;
+        width: 100px;
+        margin: 15px 10px;
+        &:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4), &:nth-of-type(5){
+          margin-top: 3px;
+          @include mq('sp'){
+            margin-top: 15px;
+          }
+        }
+        @include mq('sp'){
+          margin: 15px 5px;
+        }
+        .skill-icon{
+          width: 70px;
+          margin: 0 auto;
+        }
+        .skill-name{
+          font-weight: bold;
+          margin: 5px 0;
+          a{
+            color: $text-link;
+            border-bottom: 2px solid $text-link;
+            &:hover {
+              transition: 0.8s;
+              opacity: 0.5;
+            }
+          }
+        }
+        .rateoya {
+          height: 30px;
+        }
+        .rate {
+          position   : relative;
+          font-size: 20px;
+          letter-spacing : 0px;
+        }
+        .rate:before{
+          position: absolute;
+          display: inline-block;
+          color: #999999;
+          white-space:nowrap;
+          top: 0;
+          left: 0;
+          line-height:1em;
+          content:"★★★★★";
+        }
+        &:first-of-type{
+          .rate:after{
+            position: absolute;
+            display: inline-block;
+            color: #05bbdd;
+            white-space:nowrap;
+            top: 0;
+            left: 0;
+            line-height:1em;
+            overflow:hidden;
+            width: 90px;
+            content:"★★★★★";
+          }
+        }
+        &:nth-of-type(2){
+          .rate:after{
+            position: absolute;
+            display: inline-block;
+            color: #05bbdd;
+            white-space:nowrap;
+            top: 0;
+            left: 0;
+            line-height:1em;
+            overflow:hidden;
+            width: 90px;
+            content:"★★★★★";
+          }
+        }
+        &:nth-of-type(3){
+          .rate:after{
+            position: absolute;
+            display: inline-block;
+            color: #05bbdd;
+            white-space:nowrap;
+            top: 0;
+            left: 0;
+            line-height:1em;
+            overflow:hidden;
+            width: 70px;
+            content:"★★★★★";
+          }
+        }
+        &:nth-of-type(4){
+          .rate:after{
+            position: absolute;
+            display: inline-block;
+            color: #05bbdd;
+            white-space:nowrap;
+            top: 0;
+            left: 0;
+            line-height:1em;
+            overflow:hidden;
+            width: 60px;
+            content:"★★★★★";
+          }
+        }
+        &:nth-of-type(5){
+          .rate:after{
+            position: absolute;
+            display: inline-block;
+            color: #05bbdd;
+            white-space:nowrap;
+            top: 0;
+            left: 0;
+            line-height:1em;
+            overflow:hidden;
+            width: 40px;
+            content:"★★★★★";
+          }
+        }
+        &:nth-of-type(6){
+          .rate:after{
+            position: absolute;
+            display: inline-block;
+            color: #05bbdd;
+            white-space:nowrap;
+            top: 0;
+            left: 0;
+            line-height:1em;
+            overflow:hidden;
+            width: 60px;
+            content:"★★★★★";
+          }
+        }
+        &:nth-of-type(7){
+          .rate:after{
+            position: absolute;
+            display: inline-block;
+            color: #05bbdd;
+            white-space:nowrap;
+            top: 0;
+            left: 0;
+            line-height:1em;
+            overflow:hidden;
+            width: 30px;
+            content:"★★★★★";
+          }
+        }
+        &:nth-of-type(8){
+          .rate:after{
+            position: absolute;
+            display: inline-block;
+            color: #05bbdd;
+            white-space:nowrap;
+            top: 0;
+            left: 0;
+            line-height:1em;
+            overflow:hidden;
+            width: 70px;
+            content:"★★★★★";
+          }
+        }
+        &:nth-of-type(9){
+          .rate:after{
+            position: absolute;
+            display: inline-block;
+            color: #05bbdd;
+            white-space:nowrap;
+            top: 0;
+            left: 0;
+            line-height:1em;
+            overflow:hidden;
+            width: 60px;
+            content:"★★★★★";
+          }
+        }
+        &:nth-of-type(10){
+          .rate:after{
+            position: absolute;
+            display: inline-block;
+            color: #05bbdd;
+            white-space:nowrap;
+            top: 0;
+            left: 0;
+            line-height:1em;
+            overflow:hidden;
+            width: 80px;
+            content:"★★★★★";
+          }
+        }
+        &:nth-of-type(11){
+          .rate:after{
+            position: absolute;
+            display: inline-block;
+            color: #05bbdd;
+            white-space:nowrap;
+            top: 0;
+            left: 0;
+            line-height:1em;
+            overflow:hidden;
+            width: 60px;
+            content:"★★★★★";
+          }
+        }
+        &:nth-of-type(12){
+          .rate:after{
+            position: absolute;
+            display: inline-block;
+            color: #05bbdd;
+            white-space:nowrap;
+            top: 0;
+            left: 0;
+            line-height:1em;
+            overflow:hidden;
+            width: 80px;
+            content:"★★★★★";
+          }
+        }
+        &:nth-of-type(13){
+          .rate:after{
+            position: absolute;
+            display: inline-block;
+            color: #05bbdd;
+            white-space:nowrap;
+            top: 0;
+            left: 0;
+            line-height:1em;
+            overflow:hidden;
+            width: 80px;
+            content:"★★★★★";
+          }
+        }
+        &:nth-of-type(14){
+          .rate:after{
+            position: absolute;
+            display: inline-block;
+            color: #05bbdd;
+            white-space:nowrap;
+            top: 0;
+            left: 0;
+            line-height:1em;
+            overflow:hidden;
+            width: 60px;
+            content:"★★★★★";
+          }
+        }
+        &:nth-of-type(15){
+          .rate:after{
+            position: absolute;
+            display: inline-block;
+            color: #05bbdd;
+            white-space:nowrap;
+            top: 0;
+            left: 0;
+            line-height:1em;
+            overflow:hidden;
+            width: 60px;
+            content:"★★★★★";
+          }
+        }
+      }
     }
   }
   // -----------------------
-  // careerセクション
+  // 経歴セクション
   // -----------------------
   .section:nth-of-type(3){
-    padding: 0;
+    padding-top: 0;
     @include mq('sp'){
       padding-bottom: 120px;
     }
     .section-inner{
       @include mq('pc'){
-        max-width: 810px;
+        width: 75%;
+      }
+      @include mq('tab'){
+        width: 81%;
       }
     }
     .section-content{
@@ -465,18 +733,8 @@
       font-weight: $fw-base;
       margin-bottom: 8px;
       border-bottom: 2px solid $text-head;
-      @include mq('pc'){
-        margin-left: 8px;
-      }
       @include mq('sp'){
         font-size: 18px;
-      }
-    }
-    .career{
-      margin: 0 auto;
-      padding: 8px;
-      @include mq('sp'){
-        padding: 0;
       }
     }
     .career-item{
@@ -543,7 +801,7 @@
           opacity: 0.5;
         }
       }
-      span{
+      .emphasis{
         font-size: 20px;
       }
     }
@@ -559,9 +817,12 @@
   // -----------------------
   .section:nth-of-type(4){
     .section-inner{
-      max-width: 780px;
+      width: 75%;
       @include mq('tab'){
-        max-width: 90vw;
+        width: 68%;
+      }
+      @include mq('sp'){
+        width: 100%;
       }
     }
     .future-title{
