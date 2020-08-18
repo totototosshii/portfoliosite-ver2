@@ -712,7 +712,7 @@
     }
     .section-inner{
       @include mq('pc'){
-        width: 75%;
+        width: 76%;
       }
       @include mq('tab'){
         width: 81%;
@@ -817,7 +817,7 @@
   // -----------------------
   .section:nth-of-type(4){
     .section-inner{
-      width: 75%;
+      width: 76%;
       @include mq('tab'){
         width: 68%;
       }

@@ -1648,7 +1648,7 @@ body.noscroll {
 
 @media (min-width: 1180px) {
   .about .section:nth-of-type(3) .section-inner {
-    width: 75%;
+    width: 76%;
   }
 }
 
@@ -1799,7 +1799,7 @@ body.noscroll {
 }
 
 .about .section:nth-of-type(4) .section-inner {
-  width: 75%;
+  width: 76%;
 }
 
 @media (min-width: 768px) and (max-width: 1179px) {
