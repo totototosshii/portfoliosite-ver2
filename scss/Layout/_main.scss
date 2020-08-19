@@ -440,7 +440,7 @@
       display: flex;
       flex-wrap: wrap;
       @include mq('sp'){
-        justify-content: space-around;
+        justify-content: space-between;
       }
       .skill-item{
         text-align: center;

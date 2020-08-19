@@ -1372,8 +1372,9 @@ body.noscroll {
 
 @media (max-width: 767px) {
   .about .section:nth-of-type(2) .skill-items {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
