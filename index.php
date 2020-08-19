@@ -77,7 +77,7 @@
             </figure><!-- /.service-menu-icon -->
             <h3 class="service-title">Coding</h3><!-- /.section-title -->
             <p class="service-text">
-              お預かりしたXDなどのデザインデータを元にコーディング致します。
+              お預かりしたXdなどのデザインデータを元にコーディング致します。
             </p><!-- /.service-text -->
             <p class="service-text">
               JavaScriptやCSSを使ったアニメーションで、サイトに動きを加える事もできます。<br>既存サイトの一部修正や、レスポンシブ化への対応も可能です。

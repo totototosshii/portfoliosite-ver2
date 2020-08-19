@@ -51,7 +51,7 @@ Template Name: プロフィール
               <dt class="environment-list">FTP：</dt><!-- /.environment-list -->
               <dd class="environment-text">FileZilla</dd><!-- /.environment-text -->
               <dt class="environment-list">デザイン・書き出し：</dt><!-- /.environment-list -->
-              <dd class="environment-text">XD / Figma</dd><!-- /.environment-text -->
+              <dd class="environment-text">Xd / Figma</dd><!-- /.environment-text -->
               <dt class="environment-list">画像編集：</dt><!-- /.environment-list -->
               <dd class="environment-text">Photoshop</dd><!-- /.environment-text -->
               <dt class="environment-list">ローカル開発環境：</dt><!-- /.environment-list -->
@@ -193,10 +193,10 @@ Template Name: プロフィール
               </li><!-- /.skill-item -->
               <li class="skill-item">
                 <figure class="skill-icon">
-                  <img src="<?php echo esc_url(get_theme_file_uri('images/icons8-adobe-xd.svg')); ?>" alt="XDのアイコン">
+                  <img src="<?php echo esc_url(get_theme_file_uri('images/icons8-adobe-xd.svg')); ?>" alt="Xdのアイコン">
                 </figure><!-- /.skill-icon -->
                 <p class="skill-name">
-                  XD
+                  Xd
                 </p><!-- /.skill-name -->
                 <div class="rateoya">
                   <div class="rate"></div>
@@ -250,9 +250,9 @@ Template Name: プロフィール
               <dt class="career-list">2008年</dt><!-- /.career-list -->
               <dd class="career-text">工業高校卒業後、地元の製造業に就職し工場勤務。<br>主に工作機械のオペレーター業務を担当し、空気圧制御機器の部品を加工。一時期は切削工具管理を兼務し書類作成業務を行う。<br>リーマンショック回復後からは３交代勤務で主力製品の生産に携わる。</dd><!-- /.career-text -->
               <dt class="career-list">2018年</dt><!-- /.career-list -->
-              <dd class="career-text">体調が優れない事が多くなり、次第に今後の働き方を考えるようになる。<br>調べる過程でWeb制作に興味を持ち、始めにPCスキルを身につけるためにタイピング練習を開始。</dd><!-- /.career-text -->
+              <dd class="career-text">次第に今後の働き方を考えるようになる。<br>年齢的な不安はあるものの、興味のある分野に挑戦したい気持ちが強かったためWeb制作の道を選ぶ。<br>始めにPCスキルを身につけるためにタイピング練習を開始。</dd><!-- /.career-text -->
               <dt class="career-list">2019年</dt><!-- /.career-list -->
-              <dd class="career-text">交代勤務を続けながら平日は30分〜１時間、休日は３時間の独学。<br>HTML / CSSをProgate、ドットインストールで独学し、初めての言語に難しさを痛感した反面、思い通りの結果が表示させられた時の喜びを実感。<br>学習環境と転職先を考慮し、仙台に拠点を移す事を決意。<br>10月に退職後、プログラミングスクールに通う。</dd><!-- /.career-text -->
+              <dd class="career-text">交代勤務を続けながら平日は30分〜１時間、休日は３時間の独学。<br>HTML / CSSをProgate、ドットインストールで独学し、初めての言語に難しさを痛感した反面、思い通りの結果が表示させられた時の喜びを実感。<br>学習環境と転職先を考慮し、仙台に拠点を移す事を決意。<br>10月に前職を退職後、プログラミングスクールに通う。</dd><!-- /.career-text -->
               <dt class="career-list">2020年</dt><!-- /.career-list -->
               <dd class="career-text">プログラミングスクール以外にも学習の幅を広げる。<br><a href="https://www.jun-akiba.com/category/%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88/" target="_blank" rel="noopener noreferrer">アロキャン</a>への参加、<a href="https://www.daily-trial.com/" target="_blank" rel="noopener noreferrer">デイトラ</a> 、<a href="https://crestadesign.org/" target="_blank" rel="noopener noreferrer">クリ★スタ</a>、<a href="https://ninjacode.work/practice/" target="_blank" rel="noopener noreferrer">忍者CODE</a>などの教材に取り組みながらポートフォリオの作成に取り掛かりました。</dd><!-- /.career-text -->
               <dt class="career-list">現在</dt><!-- /.career-list -->

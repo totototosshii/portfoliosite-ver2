@@ -83,7 +83,7 @@
       font-size: 80px;
       line-height: 1.1;
       @include mq('sp'){
-        font-size: 64px;
+        font-size: 60px;
       }
     }
     .sub-title{
@@ -287,7 +287,7 @@
       font-size: 80px;
       line-height: 1.1;
       @include mq('sp'){
-        font-size: 64px;
+        font-size: 60px;
       }
     }
     .sub-title{
@@ -712,7 +712,7 @@
     }
     .section-inner{
       @include mq('pc'){
-        width: 76%;
+        width: 75%;
       }
       @include mq('tab'){
         width: 81%;
@@ -817,7 +817,7 @@
   // -----------------------
   .section:nth-of-type(4){
     .section-inner{
-      width: 76%;
+      width: 75%;
       @include mq('tab'){
         width: 68%;
       }
@@ -1005,7 +1005,7 @@
       font-size: 80px;
       line-height: 1.1;
       @include mq('sp'){
-        font-size: 64px;
+        font-size: 60px;
       }
     }
     .sub-title{
@@ -1065,7 +1065,7 @@
       font-size: 80px;
       line-height: 1.1;
       @include mq('sp'){
-        font-size: 64px;
+        font-size: 60px;
       }
     }
     .sub-title{
