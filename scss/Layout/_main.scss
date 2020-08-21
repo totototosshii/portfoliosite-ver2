@@ -422,11 +422,11 @@
         }
       }
       .environment-list{
-        width: 54%;
+        width: 52%;
         font-weight: bold;
       }
       .environment-text{
-        width: 46%;
+        width: 48%;
       }
     }
     .qualification{
@@ -714,7 +714,7 @@
     }
     .section-inner{
       @include mq('pc'){
-        width: 75%;
+        width: 76%;
       }
       @include mq('tab'){
         width: 82%;
@@ -819,7 +819,7 @@
   // -----------------------
   .section:nth-of-type(4){
     .section-inner{
-      width: 75%;
+      width: 76%;
       @include mq('tab'){
         width: 69%;
       }
