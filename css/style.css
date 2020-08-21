@@ -1349,8 +1349,20 @@ body.noscroll {
   font-weight: bold;
 }
 
+@media (max-width: 767px) {
+  .about .section:nth-of-type(2) .environment .environment-list {
+    width: 55%;
+  }
+}
+
 .about .section:nth-of-type(2) .environment .environment-text {
   width: 48%;
+}
+
+@media (max-width: 767px) {
+  .about .section:nth-of-type(2) .environment .environment-text {
+    width: 45%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1179px) {
@@ -1733,7 +1745,7 @@ body.noscroll {
   .about .section:nth-of-type(3) .career-list {
     width: 100%;
     padding-bottom: 10px;
-    text-align-last: left;
+    text-align: left;
   }
 }
 
