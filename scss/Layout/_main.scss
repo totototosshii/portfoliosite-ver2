@@ -548,6 +548,9 @@
           }
         }
         &:nth-of-type(5){
+          @include mq('tab'){
+            margin-top: 15px;
+          }
           .rate:after{
             position: absolute;
             display: inline-block;
@@ -712,18 +715,11 @@
     @include mq('sp'){
       padding-bottom: 120px;
     }
-    .section-inner{
-      @include mq('pc'){
-        width: 76%;
-      }
-      @include mq('tab'){
-        width: 82%;
-      }
-    }
     .section-content{
       margin: 0 auto;
+      width: 92%;
       @include mq('tab'){
-        width: 84%;
+        width: 72%;
       }
       @include mq('sp'){
         width: 100%;
@@ -745,6 +741,7 @@
       padding: 0 8px;
       @include mq('sp'){
         flex-direction: column;
+        margin-top: 10px;
       }
     }
     .career-list{
@@ -752,15 +749,20 @@
       font-size: 18px;
       padding-top: 20px;
       padding-bottom: 20px;
+      text-align: center;
       &:first-of-type{
         padding-top: 40px;
         @include mq('sp'){
           padding-top: 0;
         }
       }
+      @include mq('tab'){
+        width: 25%;
+      }
       @include mq('sp'){
         width: 100%;
-        padding-bottom: 0;
+        padding-bottom: 10px;
+        text-align-last: left;
       }
     }
     .career-text{
@@ -770,6 +772,9 @@
       padding-bottom: 20px;
       border-left: 2px solid $text-head;
       position: relative;
+      @include mq('tab'){
+        width: 75%;
+      }
       @include mq('sp'){
         width: 100%;
         line-height: 1.8;
@@ -818,13 +823,16 @@
   // futureセクション
   // -----------------------
   .section:nth-of-type(4){
-    .section-inner{
-      width: 76%;
+    .section-content{
+      margin: 0 auto;
+      padding-left: 55px;
       @include mq('tab'){
-        width: 69%;
+        width: 72%;
+        padding-left: 0;
       }
       @include mq('sp'){
         width: 100%;
+        padding-left: 0;
       }
     }
     .future-title{

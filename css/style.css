@@ -1496,6 +1496,12 @@ body.noscroll {
   content: "★★★★★";
 }
 
+@media (min-width: 768px) and (max-width: 1179px) {
+  .about .section:nth-of-type(2) .skill-items .skill-item:nth-of-type(5) {
+    margin-top: 15px;
+  }
+}
+
 .about .section:nth-of-type(2) .skill-items .skill-item:nth-of-type(5) .rate:after {
   position: absolute;
   display: inline-block;
@@ -1649,25 +1655,14 @@ body.noscroll {
   }
 }
 
-@media (min-width: 1180px) {
-  .about .section:nth-of-type(3) .section-inner {
-    width: 76%;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1179px) {
-  .about .section:nth-of-type(3) .section-inner {
-    width: 82%;
-  }
-}
-
 .about .section:nth-of-type(3) .section-content {
   margin: 0 auto;
+  width: 92%;
 }
 
 @media (min-width: 768px) and (max-width: 1179px) {
   .about .section:nth-of-type(3) .section-content {
-    width: 84%;
+    width: 72%;
   }
 }
 
@@ -1706,6 +1701,7 @@ body.noscroll {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 10px;
   }
 }
 
@@ -1714,6 +1710,7 @@ body.noscroll {
   font-size: 18px;
   padding-top: 20px;
   padding-bottom: 20px;
+  text-align: center;
 }
 
 .about .section:nth-of-type(3) .career-list:first-of-type {
@@ -1726,10 +1723,17 @@ body.noscroll {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1179px) {
+  .about .section:nth-of-type(3) .career-list {
+    width: 25%;
+  }
+}
+
 @media (max-width: 767px) {
   .about .section:nth-of-type(3) .career-list {
     width: 100%;
-    padding-bottom: 0;
+    padding-bottom: 10px;
+    text-align-last: left;
   }
 }
 
@@ -1740,6 +1744,12 @@ body.noscroll {
   padding-bottom: 20px;
   border-left: 2px solid #05BBDD;
   position: relative;
+}
+
+@media (min-width: 768px) and (max-width: 1179px) {
+  .about .section:nth-of-type(3) .career-text {
+    width: 75%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1801,19 +1811,22 @@ body.noscroll {
   }
 }
 
-.about .section:nth-of-type(4) .section-inner {
-  width: 76%;
+.about .section:nth-of-type(4) .section-content {
+  margin: 0 auto;
+  padding-left: 55px;
 }
 
 @media (min-width: 768px) and (max-width: 1179px) {
-  .about .section:nth-of-type(4) .section-inner {
-    width: 69%;
+  .about .section:nth-of-type(4) .section-content {
+    width: 72%;
+    padding-left: 0;
   }
 }
 
 @media (max-width: 767px) {
-  .about .section:nth-of-type(4) .section-inner {
+  .about .section:nth-of-type(4) .section-content {
     width: 100%;
+    padding-left: 0;
   }
 }
 
