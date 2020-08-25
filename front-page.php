@@ -23,14 +23,14 @@
             <img src="<?php echo esc_url(get_theme_file_uri('images/pr.png')); ?>" alt="サイトの制作者が森の中で立っている">
           </figure><!-- /.about-img -->
           <div class="about-content">
-            <!-- 投稿があればabout-messageブロック以下を表示 -->
-            <?php if(have_posts()) : ?>
-              <?php while(have_posts()) : ?>
-                <?php the_post(); ?>
-                <p class="about-message">
-                  <?php the_content(); ?>
-                </p><!-- /.about-message -->
-              <?php endwhile; ?>
+            <!-- ACFの投稿 -->
+            <?php
+              $page_id = get_field('home_message', false, false);
+              if( $page_id ):
+            ?>
+              <p class="about-message">
+                <?php echo nl2br($page_id); ?>
+              </p><!-- /.about-message -->
             <?php endif; ?>
             <button class="link-btn">
               <a href="<?php echo home_url('/about'); ?>">

@@ -13,7 +13,7 @@
   </div><!-- /.fv -->
 
   <main>
-    <!-- About -->
+    <!-- メインコンテンツ -->
     <section class="section">
       <div class="section-inner">
         <h3 class="section-title">About</h3><!-- /.section-title -->
@@ -23,12 +23,19 @@
             <img src="<?php echo esc_url(get_theme_file_uri('images/pr.png')); ?>" alt="サイトの制作者が森の中で立っている">
           </figure><!-- /.about-img -->
           <div class="about-content">
-            <p class="about-message">こんにちは、Web制作をしているToshikiです。<br>当サイトにお越し頂きありがとうございます。<br>仕事ではお客様に寄り添った丁寧なコミュニケーションを心掛けております。<br><br>｢サイトが欲しいけど、何をどうすれば良いの？｣<br>｢制作案件が多くて手が回らない｡｣<br>こんな事にお困りではありませんか？<br><br>それらの悩みをサポートするのが私の仕事ですので、是非ご相談ください。<br>一緒にサイトを作り上げて行きましょう！
-            </p><!-- /.about-message -->
+            <!-- ACFの投稿 -->
+            <?php
+              $page_id = get_field('home_message', false, false);
+              if( $page_id ):
+            ?>
+              <p class="about-message">
+                <?php echo nl2br($page_id); ?>
+              </p><!-- /.about-message -->
+            <?php endif; ?>
             <button class="link-btn">
               <a href="<?php echo home_url('/about'); ?>">
                 <i class="fas fa-arrow-right"></i>
-                プロフィールを見る
+                  プロフィールを見る
               </a>
             </button><!-- /.link-btn -->
           </div><!-- /.about-content -->
@@ -36,7 +43,6 @@
       </div><!-- /.section-inner -->
     </section><!-- /.section -->
 
-    <!-- Works -->
     <section class="section">
       <div class="section-inner">
         <h3 class="section-title">Works</h3><!-- /.section-title -->
@@ -56,7 +62,6 @@
       </div><!-- /.section-inner -->
     </section><!-- /.section -->
 
-    <!-- Service -->
     <section class="section">
       <div class="section-inner">
         <h3 class="section-title">Service</h3><!-- /.section-title -->
