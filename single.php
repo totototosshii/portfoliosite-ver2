@@ -17,7 +17,7 @@
           <?php the_post(); ?>
           <div class="section-inner">
             <h2 class="section-title"><?php the_title(); ?></h2><!-- /.section-title -->
-            <!-- ACF投稿 -->
+            <!-- ACFの投稿 -->
             <?php
               $img = get_field('repeat_img');
               $alt= $img['alt'];
