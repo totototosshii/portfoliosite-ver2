@@ -2281,7 +2281,7 @@ body.noscroll {
   }
 }
 
-.link-btn a:hover {
+.link-btn a:hover, .link-btn a:focus {
   background-color: #28536B;
   color: #f5f5f5;
 }
@@ -2308,7 +2308,7 @@ body.noscroll {
   display: none;
 }
 
-.scrollTop:hover {
+.scrollTop:hover, .scrollTop:focus {
   -webkit-transform: translateY(-5px);
       -ms-transform: translateY(-5px);
           transform: translateY(-5px);
