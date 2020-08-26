@@ -15,7 +15,7 @@
         <h2 class="section-title"><?php the_title(); ?></h2><!-- /.section-title -->
         <!-- ACFの投稿 -->
         <?php
-          $img = get_field('repeat_img');
+          $img = get_field('mockup_img');
           $alt= $img['alt'];
           $size = 'large'; // (thumbnail, medium, large, fullもしくは追加したサイズ)
           $thumb = $img['sizes'][ $size ];
@@ -27,40 +27,40 @@
         <?php endif; ?>
         <dl class="section-explanation">
           <dt class="explanation-list">経緯</dt><!-- /.explanation-list -->
-          <dd class="explanation-text"><?php the_field('repeat_happened'); ?>
+          <dd class="explanation-text"><?php the_field('explanation_happened'); ?>
           </dd><!-- /.explanation-text -->
           <dt class="explanation-list">担当範囲</dt><!-- /.explanation-list -->
-          <dd class="explanation-text"><?php the_field('repeat_responsibility'); ?></dd><!-- /.explanation-text -->
+          <dd class="explanation-text"><?php the_field('explanation_responsibility'); ?></dd><!-- /.explanation-text -->
           <dt class="explanation-list">ページ数</dt><!-- /.explanation-list -->
-          <dd class="explanation-text"><?php the_field('repeat_pages'); ?></dd><!-- /.explanation-text -->
+          <dd class="explanation-text"><?php the_field('explanation_pages'); ?></dd><!-- /.explanation-text -->
           <dt class="explanation-list">レスポンシブ</dt><!-- /.explanation-list -->
-          <dd class="explanation-text"><?php the_field('repeat_responsive'); ?></dd><!-- /.explanation-text -->
+          <dd class="explanation-text"><?php the_field('explanation_responsive'); ?></dd><!-- /.explanation-text -->
           <dt class="explanation-list">制作期間</dt><!-- /.explanation-list -->
-          <dd class="explanation-text"><?php the_field('repeat_period'); ?></dd><!-- /.explanation-text -->
+          <dd class="explanation-text"><?php the_field('explanation_period'); ?></dd><!-- /.explanation-text -->
           <dt class="explanation-list">使用ツール</dt><!-- /.explanation-list -->
-          <dd class="explanation-text"><?php the_field('repeat_tools'); ?></dd><!-- /.explanation-text -->
+          <dd class="explanation-text"><?php the_field('explanation_tools'); ?></dd><!-- /.explanation-text -->
           <dt class="explanation-list">使用言語</dt><!-- /.explanation-list -->
-          <dd class="explanation-text"><?php the_field('repeat_language'); ?></dd><!-- /.explanation-text -->
+          <dd class="explanation-text"><?php the_field('explanation_language'); ?></dd><!-- /.explanation-text -->
           <dt class="explanation-list">ソースコード</dt><!-- /.explanation-list -->
           <?php
-            $code = get_field('repeat_code');
+            $code = get_field('explanation_code');
             if($code) :
           ?>
-            <dd class="explanation-text"><a href="<?php the_field('repeat_code'); ?>" target="_blank" rel="noopener noreferrer">GitHub<i class="fab fa-github"></i></a></dd><!-- /.explanation-text --></i>
+            <dd class="explanation-text"><a href="<?php the_field('explanation_code'); ?>" target="_blank" rel="noopener noreferrer">GitHub<i class="fab fa-github"></i></a></dd><!-- /.explanation-text --></i>
           <?php else : ?>
             <dd class="explanation-text">非公開</dd><!-- /.explanation-text --></i>
           <?php endif; ?>
           <dt class="explanation-list">サイト</dt><!-- /.explanation-list -->
           <?php
-            $site = get_field('repeat_site');
+            $site = get_field('explanation_site');
             if($site) :
           ?>
-            <dd class="explanation-text"><a href="<?php the_field('repeat_site'); ?>" target="_blank" rel="noopener noreferrer">公開中</a></dd><!-- /.explanation-text -->
+            <dd class="explanation-text"><a href="<?php the_field('explanation_site'); ?>" target="_blank" rel="noopener noreferrer">公開中</a></dd><!-- /.explanation-text -->
           <?php else : ?>
             <dd class="explanation-text">非公開</dd><!-- /.explanation-text -->
           <?php endif; ?>
         </dl><!-- /.section-explanation -->
-        
+
         <!-- 通常の投稿 -->
         <?php if(have_posts()) : ?>
           <?php while(have_posts()) : ?>
