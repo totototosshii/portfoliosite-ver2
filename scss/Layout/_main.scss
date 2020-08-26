@@ -396,7 +396,7 @@
       display: inline-block;
       font-size: 20px;
       font-weight: $fw-base;
-      border-bottom: 2px solid $text-head;
+      border-bottom: 2px solid $accent-color;
       margin-bottom: 12px;
       @include mq('sp'){
         font-size: 18px;
@@ -501,7 +501,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: #05bbdd;
+            color: $accent-color;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -515,7 +515,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: #05bbdd;
+            color: $accent-color;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -529,7 +529,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: #05bbdd;
+            color: $accent-color;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -543,7 +543,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: #05bbdd;
+            color: $accent-color;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -560,7 +560,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: #05bbdd;
+            color: $accent-color;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -574,7 +574,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: #05bbdd;
+            color: $accent-color;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -588,7 +588,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: #05bbdd;
+            color: $accent-color;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -602,7 +602,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: #05bbdd;
+            color: $accent-color;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -616,7 +616,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: #05bbdd;
+            color: $accent-color;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -630,7 +630,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: #05bbdd;
+            color: $accent-color;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -644,7 +644,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: #05bbdd;
+            color: $accent-color;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -658,7 +658,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: #05bbdd;
+            color: $accent-color;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -672,7 +672,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: #05bbdd;
+            color: $accent-color;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -686,7 +686,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: #05bbdd;
+            color: $accent-color;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -700,7 +700,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: #05bbdd;
+            color: $accent-color;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -736,7 +736,7 @@
       font-size: 20px;
       font-weight: $fw-base;
       margin-bottom: 8px;
-      border-bottom: 2px solid $text-head;
+      border-bottom: 2px solid $accent-color;
       @include mq('sp'){
         font-size: 18px;
       }
@@ -776,7 +776,7 @@
       padding-left: 40px;
       padding-top: 20px;
       padding-bottom: 20px;
-      border-left: 2px solid $text-head;
+      border-left: 2px solid $accent-color;
       position: relative;
       @include mq('tab'){
         width: 75%;
@@ -809,7 +809,7 @@
         color: $text-link;
         font-weight: bold;
         border-bottom: 2px solid $text-link;
-        &:hover {
+        &:hover, &:focus{
           transition: 0.8s;
           opacity: 0.5;
         }
@@ -846,7 +846,7 @@
       font-size: 20px;
       font-weight: $fw-base;
       margin-bottom: 8px;
-      border-bottom: 2px solid $text-head;
+      border-bottom: 2px solid $accent-color;
       @include mq('sp'){
         font-size: 18px;
       }
