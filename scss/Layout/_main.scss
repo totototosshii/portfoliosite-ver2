@@ -56,6 +56,30 @@
   }
 }
 
+// -----------------------
+// パンくずリスト
+// -----------------------
+.breadcrumbs {
+  display: flex;
+  margin-bottom: 30px;
+  font-size: 14px;
+  @include mq('sp'){
+    font-size: 12px;
+  }
+  a {
+    display: block;
+  }
+  .fa-chevron-right{
+    padding: 0 8px;
+    position: relative;
+    &::before{
+      position: absolute;
+      top: 50%;
+      left: 4px;
+      transform: translateY(-50%);
+    }
+  }
+}
 
 // -----------------------
 // -----------------------
@@ -865,7 +889,7 @@
 // -----------------------
 // works-listページ
 // -----------------------
-.works-list, .works-list-ws, .works-list-wp, .works-list-ot{
+.archive, .works-list, .works-list-ws, .works-list-wp, .works-list-ot{
   .l-section{
     display: flex;
     padding-top: 20px;

@@ -13,6 +13,14 @@ Template Name: お問い合わせ
   <main>
     <section class="section">
       <div class="section-inner">
+        <!-- パンくずリスト -->
+        <p class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+          <!-- Breadcrumb NavXT のパンくずを表示するための記述 -->
+          <?php if(function_exists('bcn_display')){
+              bcn_display();
+            }
+          ?>
+        </p>
         <h3 class="section-title">Contact</h3><!-- /.section-title -->
         <p class="section-title-ja">− お問い合わせ −</p><!-- /.section-title-ja -->
         <div class="section-content">
