@@ -25,11 +25,11 @@
           <div class="about-content">
             <!-- ACFの投稿 -->
             <?php
-              $page_id = get_field('home_message', false, false);
-              if( $page_id ):
+              $home_message = get_field('home_message', false, false);
+              if( $home_message ):
             ?>
               <p class="about-message">
-                <?php echo nl2br($page_id); ?>
+                <?php echo nl2br($home_message); ?>
               </p><!-- /.about-message -->
             <?php endif; ?>
             <button class="link-btn">
