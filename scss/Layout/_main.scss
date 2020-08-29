@@ -887,9 +887,9 @@
 
 // -----------------------
 // -----------------------
-// works-listページ
+// archive、works-listページ
 // -----------------------
-.archive, .works-list, .works-list-ws, .works-list-wp, .works-list-ot{
+.archive, .works-list-ws, .works-list-wp, .works-list-ot{
   .l-section{
     display: flex;
     padding-top: 20px;
@@ -1117,6 +1117,22 @@
     }
   }
   .section:first-of-type{
+    // -----------------------
+    // パンくずリスト
+    // -----------------------
+    .breadcrumbs{
+      @include mq('sp'){
+        flex-direction: column;
+        .fa-chevron-right{
+          padding-top: 10px;
+          &::before{
+            transform: rotate(90deg);
+            top: 0;
+            left: 15px;
+          }
+        }
+      }
+    }
     .section-title{
       font-family: $ff-base;
       font-size: 24px;
