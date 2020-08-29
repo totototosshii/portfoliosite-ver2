@@ -94,7 +94,7 @@
             </figure><!-- /.service-menu-icon -->
             <h3 class="service-title">WordPress</h3><!-- /.section-title -->
             <p class="service-text">
-              自作テーマや既存テーマの｢SnowMonkey｣｢Lightning｣を使用したサイト制作が可能です。<br>コンテンツの追加や編集など、ページの更新頻度が高いサイトにはWordPressをお勧めします。
+              自作テーマの作成に加えて、既存テーマの｢SnowMonkey｣、｢Lightning｣をカスタマイズしたサイト制作が可能です。<br>コンテンツの追加や編集など、ページの更新頻度が高いサイトにはWordPressをお勧めします。
             </p><!-- /.service-text -->
           </div><!-- /.service-menu -->
         </div><!-- /.section-content -->
