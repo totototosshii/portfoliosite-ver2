@@ -9,7 +9,7 @@ Template Name: 制作実績Other
       <!-- 絞り込みナビゲーション -->
       <nav class="left-nav">
         <ul class="left-nav-list">
-          <li class="left-nav-item"><a href="<?php echo home_url('/works-list'); ?>">All</a></li><!-- /.left-nav-item -->
+          <li class="left-nav-item"><a href="<?php echo home_url('/archive'); ?>">All</a></li><!-- /.left-nav-item -->
           <li class="left-nav-item"><a href="<?php echo home_url('/works-list-ws'); ?>">WebSite</a></li><!-- /.left-nav-item -->
           <li class="left-nav-item"><a href="<?php echo home_url('/works-list-wp'); ?>">WordPress</a></li><!-- /.left-nav-item -->
           <li class="left-nav-item"><i class="fas fa-check"></i><a href="<?php echo home_url('/works-list-ot'); ?>">Other</a></li><!-- /.left-nav-item -->
