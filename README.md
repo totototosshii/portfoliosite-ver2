@@ -16,4 +16,13 @@
 ### 使用言語
 HTML / CSS(SCSS) / jQuery / JavaScript / PHP
 
+### 使用プラグイン
+・「Advanced Custom Fields PRO」<br>
+・「All-in-One WP Migration」<br>
+・「Autoptimize」<br>
+・「Breadcrumb NavXT」<br>
+・「Contact Form 7」<br>
+・「Show Current Template」<br>
+・「WP Multibyte Patch」
+
 ### [→実際のサイト](https://tosshii-portfolio.com/)
