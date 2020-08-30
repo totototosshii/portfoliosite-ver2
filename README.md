@@ -22,6 +22,7 @@ HTML / CSS(SCSS) / jQuery / JavaScript / PHP
 ・「Autoptimize」<br>
 ・「Breadcrumb NavXT」<br>
 ・「Contact Form 7」<br>
+・「Edit Author Slug」<br>
 ・「Show Current Template」<br>
 ・「WP Multibyte Patch」
 
