@@ -7,9 +7,11 @@
 ・TOPページのWorksはpickupタグが付いた最新の投稿６件を取得｡<br>
 ・お問い合わせページ以外のcontactセクション、TOPページのpickupタグの取得表示、制作実績ページの投稿記事取得の３つはテンプレートパーツ化｡<br>
 ・プロフィールとお問い合わせページのファーストビューには、読み込み速度を考慮して画像ではなくCSSグラデーションを採用｡<br>
-・Advanced Custom Fieldsを導入してカスタムフィールドを作成。<br>
+・「Advanced Custom Fields」を導入してカスタムフィールドを作成。<br>
   →トップページ(Aboutセクション内のメッセージ)<br>
+  →プロフィールページ(これからの事)
   →個別投稿ページ(モックアップ画像と各説明欄)<br>
+・プロフィールページのプロフィール文には「Snow Monkey Editor」で実装。<br>
 ・お問い合わせフォームの機能は｢[Contact Form 7](https://ja.wordpress.org/plugins/contact-form-7/)｣で実装｡<br>
 ・スクロールトップボタンはJavaScript、ハンバーガーメニューはjQueryで実装｡
 
