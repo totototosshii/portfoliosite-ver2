@@ -41,7 +41,7 @@ function my_styles() {
     'style-css',
     get_template_directory_uri() . '/css/style.css',
     array(),
-    '1.3.1',
+    '1.3.2',
     'all'
   );
 }

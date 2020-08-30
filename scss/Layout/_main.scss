@@ -419,11 +419,10 @@
     .skill-head, .qualification-head, .environment-head{
       display: inline-block;
       font-size: 20px;
-      font-weight: $fw-base;
+      font-weight: bold;
       border-bottom: 2px solid $accent-color;
       margin-bottom: 12px;
       @include mq('sp'){
-        font-weight: bold;
         font-size: 18px;
       }
     }
@@ -752,12 +751,11 @@
     .career-head{
       display: inline-block;
       font-size: 20px;
-      font-weight: $fw-base;
+      font-weight: bold;
       margin-bottom: 8px;
       border-bottom: 2px solid $accent-color;
       @include mq('sp'){
         font-size: 18px;
-        font-weight: bold;
       }
     }
     .career-item{
@@ -863,7 +861,7 @@
     .future-title{
       display: inline-block;
       font-size: 20px;
-      font-weight: $fw-base;
+      font-weight: bold;
       margin-bottom: 8px;
       border-bottom: 2px solid $accent-color;
       @include mq('sp'){

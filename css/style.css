@@ -1331,14 +1331,13 @@ body.noscroll {
 .about .section:nth-of-type(2) .skill-head, .about .section:nth-of-type(2) .qualification-head, .about .section:nth-of-type(2) .environment-head {
   display: inline-block;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: bold;
   border-bottom: 2px solid #05BBDD;
   margin-bottom: 12px;
 }
 
 @media (max-width: 767px) {
   .about .section:nth-of-type(2) .skill-head, .about .section:nth-of-type(2) .qualification-head, .about .section:nth-of-type(2) .environment-head {
-    font-weight: bold;
     font-size: 18px;
   }
 }
@@ -1704,7 +1703,7 @@ body.noscroll {
 .about .section:nth-of-type(3) .career-head {
   display: inline-block;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: bold;
   margin-bottom: 8px;
   border-bottom: 2px solid #05BBDD;
 }
@@ -1712,7 +1711,6 @@ body.noscroll {
 @media (max-width: 767px) {
   .about .section:nth-of-type(3) .career-head {
     font-size: 18px;
-    font-weight: bold;
   }
 }
 
@@ -1863,7 +1861,7 @@ body.noscroll {
 .about .section:nth-of-type(4) .future-title {
   display: inline-block;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: bold;
   margin-bottom: 8px;
   border-bottom: 2px solid #05BBDD;
 }
