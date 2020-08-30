@@ -423,6 +423,7 @@
       border-bottom: 2px solid $accent-color;
       margin-bottom: 12px;
       @include mq('sp'){
+        font-weight: bold;
         font-size: 18px;
       }
     }
@@ -446,17 +447,11 @@
         }
       }
       .environment-list{
-        width: 52%;
+        width: 40%;
         font-weight: bold;
-        @include mq('sp'){
-          width: 55%;
-        }
       }
       .environment-text{
-        width: 48%;
-        @include mq('sp'){
-          width: 45%;
-        }
+        width: 60%;
       }
     }
     .qualification{
@@ -471,9 +466,7 @@
     .skill-items{
       display: flex;
       flex-wrap: wrap;
-      @include mq('sp'){
-        justify-content: space-between;
-      }
+      justify-content: space-between;
       .skill-item{
         text-align: center;
         width: 100px;
@@ -485,6 +478,7 @@
           }
         }
         @include mq('sp'){
+          width: 110px;
           margin: 15px 5px;
         }
         .skill-icon{
@@ -763,6 +757,7 @@
       border-bottom: 2px solid $accent-color;
       @include mq('sp'){
         font-size: 18px;
+        font-weight: bold;
       }
     }
     .career-item{

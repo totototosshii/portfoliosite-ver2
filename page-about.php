@@ -58,11 +58,11 @@ Template Name: プロフィール
               <dd class="environment-text">Live Sass Compiler</dd><!-- /.environment-text -->
               <dt class="environment-list">FTP：</dt><!-- /.environment-list -->
               <dd class="environment-text">FileZilla</dd><!-- /.environment-text -->
-              <dt class="environment-list">デザイン・書き出し：</dt><!-- /.environment-list -->
+              <dt class="environment-list">デザイン：</dt><!-- /.environment-list -->
               <dd class="environment-text">Xd / Figma</dd><!-- /.environment-text -->
               <dt class="environment-list">画像編集：</dt><!-- /.environment-list -->
               <dd class="environment-text">Photoshop</dd><!-- /.environment-text -->
-              <dt class="environment-list">ローカル開発環境：</dt><!-- /.environment-list -->
+              <dt class="environment-list">開発環境：</dt><!-- /.environment-list -->
               <dd class="environment-text">Local by Flywheel</dd>
             </dl><!-- /.environment-item -->
           </div><!-- /.environment -->
