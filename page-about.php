@@ -277,7 +277,7 @@ Template Name: プロフィール
           <div class="future-title">これからの事</div><!-- /.future-title -->
           <div class="future">
             <p class="future-message">
-              現在はコーディングがメインですが、更に言語を深く学んでフロントエンド周りの知識を増やし、仕事の幅を広げたいと考えております。
+              <?php the_field('future_message'); ?>
             </p><!-- /.future-message -->
           </div><!-- /.future-->
         </div><!-- /.section-content -->
