@@ -276,9 +276,15 @@ Template Name: プロフィール
         <div class="section-content">
           <div class="future-title">これからの事</div><!-- /.future-title -->
           <div class="future">
+            <!-- ACFの投稿 -->
+            <?php
+              $future_message = get_field('future_message', false, false);
+              if( $future_message ):
+            ?>
             <p class="future-message">
-              <?php the_field('future_message'); ?>
+              <?php echo nl2br($future_message); ?>
             </p><!-- /.future-message -->
+            <?php endif; ?>
           </div><!-- /.future-->
         </div><!-- /.section-content -->
       </div><!-- /.section-inner -->
