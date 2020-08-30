@@ -53,7 +53,7 @@
             <?php get_template_part('template-parts/pickup-tag'); ?>
           </ul><!-- /.works-items -->
           <button class="link-btn">
-            <a href="<?php echo home_url('/archive'); ?>">
+            <a href="<?php echo home_url('/category/all'); ?>">
               <i class="fas fa-arrow-right"></i>
               制作実績一覧
             </a>
