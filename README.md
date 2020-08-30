@@ -24,6 +24,7 @@ HTML / CSS(SCSS) / jQuery / JavaScript / PHP
 ・「Contact Form 7」<br>
 ・「Edit Author Slug」<br>
 ・「Show Current Template」<br>
+・「Snow Monkey Editor」<br>
 ・「WP Multibyte Patch」
 
 ### [→実際のサイト](https://tosshii-portfolio.com/)
