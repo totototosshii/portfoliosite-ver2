@@ -20,7 +20,7 @@ Template Name: お問い合わせ
               bcn_display();
             }
           ?>
-        </p>
+        </p><!-- /.breadcrumbs -->
         <h3 class="section-title">Contact</h3><!-- /.section-title -->
         <p class="section-title-ja">− お問い合わせ −</p><!-- /.section-title-ja -->
         <div class="section-content">

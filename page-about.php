@@ -22,7 +22,7 @@ Template Name: プロフィール
               bcn_display();
             }
           ?>
-        </p>
+        </p><!-- /.breadcrumbs -->
         <h3 class="section-title">Profile</h3><!-- /.section-title -->
         <p class="section-title-ja">− 私について −</p><!-- /.section-title-ja -->
         <div class="section-content">
@@ -63,11 +63,11 @@ Template Name: プロフィール
               <dt class="environment-list">画像編集：</dt><!-- /.environment-list -->
               <dd class="environment-text">Photoshop</dd><!-- /.environment-text -->
               <dt class="environment-list">開発環境：</dt><!-- /.environment-list -->
-              <dd class="environment-text">Local by Flywheel</dd>
+              <dd class="environment-text">Local by Flywheel</dd><!-- /.environment-text -->
             </dl><!-- /.environment-item -->
           </div><!-- /.environment -->
           <div class="qualification">
-            <h4 class="qualification-head">資格</h4>
+            <h4 class="qualification-head">資格</h4><!-- /.qualification-head -->
             <ul class="qualification-item">
               <li>Microsoft Office Specialist Excel 365&2019</li>
               <li>Microsoft Office Specialist Word 2016</li>
@@ -76,7 +76,7 @@ Template Name: プロフィール
         </div><!-- /.section-content -->
         <div class="section-content">
           <div class="skills">
-            <h4 class="skill-head">スキル</h4>
+            <h4 class="skill-head">スキル</h4><!-- /.skill-head -->
             <ul class="skill-items">
               <li class="skill-item">
                 <figure class="skill-icon">
@@ -276,15 +276,10 @@ Template Name: プロフィール
         <div class="section-content">
           <div class="future-title">これからの事</div><!-- /.future-title -->
           <div class="future">
-            <!-- ACFの投稿 -->
-            <?php
-              $future_message = get_field('future_message', false, false);
-              if( $future_message ):
-            ?>
             <p class="future-message">
-              <?php echo nl2br($future_message); ?>
+              <!-- ACFの投稿 -->
+              <?php the_field('future_message'); ?>
             </p><!-- /.future-message -->
-            <?php endif; ?>
           </div><!-- /.future-->
         </div><!-- /.section-content -->
       </div><!-- /.section-inner -->

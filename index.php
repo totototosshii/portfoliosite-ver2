@@ -23,15 +23,10 @@
             <img src="<?php echo esc_url(get_theme_file_uri('images/pr.png')); ?>" alt="サイトの制作者が森の中で立っている">
           </figure><!-- /.about-img -->
           <div class="about-content">
-            <!-- ACFの投稿 -->
-            <?php
-              $home_message = get_field('home_message', false, false);
-              if( $home_message ):
-            ?>
-              <p class="about-message">
-                <?php echo nl2br($home_message); ?>
-              </p><!-- /.about-message -->
-            <?php endif; ?>
+            <p class="about-message">
+              <!-- ACFの投稿 -->
+              <?php the_field('home_message'); ?>
+            </p><!-- /.about-message -->
             <button class="link-btn">
               <a href="<?php echo home_url('/about'); ?>">
                 <i class="fas fa-arrow-right"></i>
@@ -73,7 +68,8 @@
             </figure><!-- /.service-menu-icon -->
             <h3 class="service-title">Design</h3><!-- /.service-title -->
             <p class="service-text">
-              ヒアリングに基づいたイメージに沿って､デザインをご提案致します。<br>Photoshopが扱えますので､「画像の修正だけをお願いしたい」と言ったご相談も可能です。
+              <!-- ACFの投稿 -->
+              <?php the_field('home_design'); ?>
             </p><!-- /.service-text -->
           </div><!-- /.service-menu -->
           <div class="service-menu">
@@ -82,10 +78,8 @@
             </figure><!-- /.service-menu-icon -->
             <h3 class="service-title">Coding</h3><!-- /.section-title -->
             <p class="service-text">
-              お預かりしたXdなどのデザインデータを元にコーディング致します。
-            </p><!-- /.service-text -->
-            <p class="service-text">
-              JavaScriptやCSSを使ったアニメーションで、サイトに動きを加える事もできます。<br>既存サイトの一部修正や、レスポンシブ化への対応も可能です。
+              <!-- ACFの投稿 -->
+              <?php the_field('home_coding'); ?>
             </p><!-- /.service-text -->
           </div><!-- /.service-menu -->
           <div class="service-menu">
@@ -94,7 +88,8 @@
             </figure><!-- /.service-menu-icon -->
             <h3 class="service-title">WordPress</h3><!-- /.section-title -->
             <p class="service-text">
-              自作テーマの作成に加えて、既存テーマの｢SnowMonkey｣、｢Lightning｣をカスタマイズしたサイト制作が可能です。<br>コンテンツの追加や編集など、ページの更新頻度が高いサイトにはWordPressをお勧めします。
+              <!-- ACFの投稿 -->
+              <?php the_field('home_wordpress'); ?>
             </p><!-- /.service-text -->
           </div><!-- /.service-menu -->
         </div><!-- /.section-content -->

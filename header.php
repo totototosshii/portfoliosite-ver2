@@ -36,11 +36,11 @@
           ?>
         </div><!-- /.header-links -->
         <button class="drawer-btn">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="drawer_menu_text drawer_text">Menu</span>
-          <span class="js-drawer_close drawer_text">Close</span>
+          <span class="bar"></span><!-- /.bar -->
+          <span class="bar"></span><!-- /.bar -->
+          <span class="bar"></span><!-- /.bar -->
+          <span class="drawer_menu_text drawer_text">Menu</span><!-- /.drawer_menu_text -->
+          <span class="js-drawer_close drawer_text">Close</span><!-- /.js-drawer_close -->
         </button><!-- /.drawer-btn -->
       </div><!-- /.header-inner -->
     </header><!-- /.header -->

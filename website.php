@@ -21,7 +21,7 @@ Template Name: WebSite
           <!-- パンくずリスト -->
           <p class="breadcrumbs">
             <a href="<?php echo home_url('/home'); ?>">ホーム</a><i class="fas fa-chevron-right fa-xs"></i>制作実績
-          </p>
+          </p><!-- /.breadcrumbs -->
           <h2 class="section-title">Works</h2><!-- /.section-title -->
           <p class="section-title-ja">− 制作実績一覧 −</p><!-- /.section-title-ja -->
           <div class="section-content">

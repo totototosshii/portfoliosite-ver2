@@ -15,7 +15,7 @@
         <!-- パンくずリスト -->
         <p class="breadcrumbs">
           <a href="<?php echo home_url('/home'); ?>">ホーム</a><i class="fas fa-chevron-right fa-xs"></i><a href="<?php echo home_url('/category/all'); ?>">制作実績</a><i class="fas fa-chevron-right fa-xs"></i><?php the_title(); ?>
-        </p>
+        </p><!-- /.breadcrumbs -->
         <h2 class="section-title"><?php the_title(); ?></h2><!-- /.section-title -->
         <!-- ACFの投稿 -->
         <?php

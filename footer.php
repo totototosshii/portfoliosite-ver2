@@ -1,6 +1,6 @@
   <footer class="footer">
     <p class="copyright" lang-"en">
-      &copy; <?php if (date("Y")!=2019) echo date("Y"); ?> <?php bloginfo('name'); ?>
+      &copy; <?php if (date("Y")!=2019) echo date("Y"); ?><?php bloginfo('name'); ?>
     </p><!-- /.copyright -->
   </footer><!-- /.footer -->
 
