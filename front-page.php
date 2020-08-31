@@ -7,8 +7,8 @@
       <p class="sub-title">- Web Production -</p><!-- /.sub-title -->
     </div><!-- /.fv-title-wrapper -->
     <div class="arrows">
-      <div class="arrow arrowfirst"></div>
-      <div class="arrow arrowsecond"></div>
+      <div class="arrow arrowfirst"></div><!-- /.arrow -->
+      <div class="arrow arrowsecond"></div><!-- /.arrow -->
     </div><!-- /.arrows -->
   </div><!-- /.fv -->
 
@@ -27,12 +27,10 @@
               <!-- ACFの投稿 -->
               <?php the_field('home_message'); ?>
             </p><!-- /.about-message -->
-            <button class="link-btn">
-              <a href="<?php echo home_url('/about'); ?>">
-                <i class="fas fa-arrow-right"></i>
-                  プロフィールを見る
-              </a>
-            </button><!-- /.link-btn -->
+            <a href="<?php echo home_url('/about'); ?>" class="link-btn">
+              <i class="fas fa-arrow-right"></i>
+                プロフィールを見る
+            </a><!-- /.link-btn -->
           </div><!-- /.about-content -->
         </div><!-- /.section-content -->
       </div><!-- /.section-inner -->
@@ -47,12 +45,10 @@
             <!-- pickup -->
             <?php get_template_part('template-parts/pickup-tag'); ?>
           </ul><!-- /.works-items -->
-          <button class="link-btn">
-            <a href="<?php echo home_url('/category/all'); ?>">
-              <i class="fas fa-arrow-right"></i>
-              制作実績一覧
-            </a>
-          </button><!-- /.link-btn -->
+          <a href="<?php echo home_url('/category/all'); ?>" class="link-btn">
+            <i class="fas fa-arrow-right"></i>
+            制作実績一覧
+          </a><!-- /.link-btn -->
         </div><!-- /.section-content -->
       </div><!-- /.section-inner -->
     </section><!-- /.section -->

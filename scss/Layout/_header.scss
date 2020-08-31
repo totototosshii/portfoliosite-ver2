@@ -136,7 +136,7 @@
 }
 
 // sp版works-listページ背景透過無し
-.works-list, .works-list-ws, .works-list-wp, .works-list-ot{
+.archive, .website, .wordpress, .other{
   @include mq('sp'){
     .header{
       background: rgb(88, 89, 98);

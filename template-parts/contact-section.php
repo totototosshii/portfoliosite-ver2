@@ -7,12 +7,10 @@
       <p class="contact-read">
         制作のご依頼やご相談(無料)など、お気軽にご連絡ください。
       </p><!-- /.contact-read -->
-      <button class="link-btn">
-        <a href="<?php echo home_url('/contact'); ?>">
-          <i class="fas fa-arrow-right"></i>
-          お問い合わせページ
-        </a>
-      </button><!-- /.link-btn -->
+      <a href="<?php echo home_url('/contact'); ?>" class="link-btn">
+        <i class="fas fa-arrow-right"></i>
+        お問い合わせページ
+      </a>
     </div><!-- /.section-content -->
   </div><!-- /.section-inner -->
 </section><!-- /.section -->
