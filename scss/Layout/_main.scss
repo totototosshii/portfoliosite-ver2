@@ -265,6 +265,17 @@
       @include mq('sp'){
         flex-direction: column;
       }
+      .service-menu{
+        width: 30%;
+        @include mq('sp'){
+          margin: 0 auto;
+          width: 100%;
+          padding-bottom: 56px;
+          &:last-child{
+            padding-bottom: 0;
+          }
+        }
+      }
       .service-menu-icon, .service-title{
         text-align: center;
       }
@@ -275,16 +286,8 @@
         font-size: 26px;
         padding-bottom: 8px;
       }
-    }
-    .service-menu{
-      width: 30%;
-      @include mq('sp'){
-        margin: 0 auto;
-        width: 100%;
-        padding-bottom: 56px;
-        &:last-child{
-          padding-bottom: 0;
-        }
+      .service-text{
+        text-align: justify;
       }
     }
   }
@@ -890,6 +893,9 @@
       @include mq('sp'){
         padding: 0;
       }
+    }
+    .future-message{
+      text-align: justify;
     }
   }
 }
