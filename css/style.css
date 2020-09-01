@@ -1255,6 +1255,10 @@ body.noscroll {
   }
 }
 
+.about .section:first-of-type .profile-message {
+  text-align: justify;
+}
+
 .about .section:first-of-type .profile-message span {
   font-weight: bold;
 }
@@ -2279,6 +2283,7 @@ body.noscroll {
 .single .explanation-text {
   width: 65%;
   padding-bottom: 40px;
+  text-align: justify;
 }
 
 @media (max-width: 767px) {

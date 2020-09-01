@@ -27,12 +27,9 @@ Template Name: お問い合わせ
           <p class="contact-read">
             制作のご依頼やご相談(無料)など、お気軽にご連絡ください。
           </p><!-- /.contact-read -->
-          <?php if ( have_posts() ) : ?>
-            <?php while ( have_posts() ) : ?>
-              <?php the_post(); ?>
-                <?php the_content(); ?>
-            <?php endwhile; ?>
-          <?php endif; ?>
+          <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+            <?php the_content(); ?>
+          <?php endwhile; endif; ?>
         </div><!-- /.section-content -->
       </div><!-- /.section-inner -->
     </section><!-- /.section -->

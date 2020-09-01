@@ -31,14 +31,11 @@ Template Name: プロフィール
           </figure><!-- /.profile-img -->
           <div class="profile-content">
             <!-- 投稿があればprofile-messageブロック以下を表示 -->
-            <?php if(have_posts()) : ?>
-              <?php while(have_posts()) : ?>
-                <?php the_post(); ?>
-                <p class="profile-message">
-                  <?php the_content(); ?>
-                </p><!-- /.profile-message -->
-              <?php endwhile; ?>
-            <?php endif; ?>
+            <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+              <p class="profile-message">
+                <?php the_content(); ?>
+              </p><!-- /.profile-message -->
+            <?php endwhile; endif; ?>
           </div><!-- /.profile-content -->
         </div><!-- /.section-content -->
       </div><!-- /.section-inner -->

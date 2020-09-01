@@ -66,12 +66,9 @@
         </dl><!-- /.section-explanation -->
 
         <!-- 通常の投稿 -->
-        <?php if(have_posts()) : ?>
-          <?php while(have_posts()) : ?>
-            <?php the_post(); ?>
-            <?php the_content(); ?>
-          <?php endwhile; ?>
-        <?php endif; ?>
+        <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+          <?php the_content(); ?>
+        <?php endwhile; endif; ?>
       </div><!-- /.section-inner -->
     </section><!-- /.section -->
 
