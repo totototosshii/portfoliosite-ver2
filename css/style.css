@@ -721,7 +721,7 @@ a:hover {
   display: none;
 }
 
-body.noscroll {
+body.noScroll {
   overflow: hidden;
 }
 
@@ -2365,7 +2365,7 @@ body.noscroll {
           transform: translate(-50%, -50%);
 }
 
-.is-fadein {
+.is-fadeIn {
   display: block;
   cursor: pointer;
 }

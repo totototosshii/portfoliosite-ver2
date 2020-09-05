@@ -41,7 +41,7 @@ function my_styles() {
     'style-css',
     get_template_directory_uri() . '/css/style.css',
     array(),
-    '1.3.7',
+    '1.3.8',
     'all'
   );
 }
@@ -54,7 +54,7 @@ function my_scripts() {
     'script-js',
     get_template_directory_uri() . '/js/main.js',
     array( 'jquery' ),
-    '1.0.0',
+    '1.0.1',
     true
   );
 }

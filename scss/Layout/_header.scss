@@ -35,6 +35,12 @@
     &:focus{
       outline: none;
     }
+    // @include mq('sp'){
+    //   display: none;
+    // }
+    // @include mq('tab'){
+    //   display: none;
+    // }
   }
   @include mq('pc'){
     .drawer-btn{
@@ -135,7 +141,7 @@
   }
 }
 
-// sp版works-listページ背景透過無し
+// SP版の制作実績ページの背景透過無し
 .archive, .website, .wordpress, .other{
   @include mq('sp'){
     .header{
@@ -166,6 +172,6 @@
 .js-drawer_close {
   display: none;
 }
-body.noscroll {
+body.noScroll {
   overflow: hidden;
 }
