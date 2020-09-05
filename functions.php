@@ -54,7 +54,7 @@ function my_scripts() {
     'script-js',
     get_template_directory_uri() . '/js/main.js',
     array( 'jquery' ),
-    '1.0.1',
+    '1.0.2',
     true
   );
 }
