@@ -35,12 +35,6 @@
     &:focus{
       outline: none;
     }
-    // @include mq('sp'){
-    //   display: none;
-    // }
-    // @include mq('tab'){
-    //   display: none;
-    // }
   }
   @include mq('pc'){
     .drawer-btn{

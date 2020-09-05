@@ -1,4 +1,6 @@
-// ハンバーガーメニュー
+// --------------------------------
+//      ハンバーガーメニュー
+// --------------------------------
 jQuery('.drawer-btn').on('click', function () {
   jQuery(this).toggleClass('is-active');
   jQuery('.header-links').toggleClass('is-active');
@@ -8,7 +10,9 @@ jQuery('.drawer-btn').on('click', function () {
 });
 
 
-//スクロールトップボタン
+// --------------------------------
+//      スクロールトップボタン
+// --------------------------------
 window.onscroll = () => {
 
   //ボタンの要素を取得
