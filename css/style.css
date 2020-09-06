@@ -2365,7 +2365,7 @@ body.noScroll {
           transform: translate(-50%, -50%);
 }
 
-.is-fadeIn {
+.scrollTop.is-fadeIn {
   display: block;
   cursor: pointer;
 }
