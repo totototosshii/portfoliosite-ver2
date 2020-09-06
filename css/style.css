@@ -1582,7 +1582,7 @@ body.noScroll {
   left: 0;
   line-height: 1em;
   overflow: hidden;
-  width: 70px;
+  width: 20px;
   content: "★★★★★";
 }
 
@@ -1595,7 +1595,7 @@ body.noScroll {
   left: 0;
   line-height: 1em;
   overflow: hidden;
-  width: 60px;
+  width: 70px;
   content: "★★★★★";
 }
 
@@ -1608,7 +1608,7 @@ body.noScroll {
   left: 0;
   line-height: 1em;
   overflow: hidden;
-  width: 80px;
+  width: 60px;
   content: "★★★★★";
 }
 
@@ -1621,7 +1621,7 @@ body.noScroll {
   left: 0;
   line-height: 1em;
   overflow: hidden;
-  width: 60px;
+  width: 80px;
   content: "★★★★★";
 }
 
@@ -1634,7 +1634,7 @@ body.noScroll {
   left: 0;
   line-height: 1em;
   overflow: hidden;
-  width: 80px;
+  width: 60px;
   content: "★★★★★";
 }
 
@@ -1660,11 +1660,24 @@ body.noScroll {
   left: 0;
   line-height: 1em;
   overflow: hidden;
-  width: 60px;
+  width: 80px;
   content: "★★★★★";
 }
 
 .about .section:nth-of-type(2) .skill-items .skill-item:nth-of-type(15) .rate:after {
+  position: absolute;
+  display: inline-block;
+  color: #05BBDD;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+  line-height: 1em;
+  overflow: hidden;
+  width: 60px;
+  content: "★★★★★";
+}
+
+.about .section:nth-of-type(2) .skill-items .skill-item:nth-of-type(16) .rate:after {
   position: absolute;
   display: inline-block;
   color: #05BBDD;

@@ -154,6 +154,17 @@ Template Name: プロフィール
               </li><!-- /.skill-item -->
               <li class="skill-item">
                 <figure class="skill-icon">
+                  <img src="<?php echo esc_url(get_theme_file_uri('images/icons8-mysql.svg')); ?>" alt="MySQLのアイコン">
+                </figure><!-- /.skill-icon -->
+                <p class="skill-name">
+                  MySQL
+                </p><!-- /.skill-name -->
+                <div class="rateoya">
+                  <div class="rate"></div>
+                </div>
+              </li><!-- /.skill-item -->
+              <li class="skill-item">
+                <figure class="skill-icon">
                   <img src="<?php echo esc_url(get_theme_file_uri('images/icons8-wordpress.svg')); ?>" alt="WordPressのアイコン">
                 </figure><!-- /.skill-icon -->
                 <p class="skill-name">
