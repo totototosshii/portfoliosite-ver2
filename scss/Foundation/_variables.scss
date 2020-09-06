@@ -2,17 +2,18 @@
 $bgc:#eaf9fb;
 
 // テキストカラー
-$textc: #30323D;
+$txt-d: #30323D;
+$txt-w: #f5f5f5;
 
 // テキストリンク
-$text-link: #037BFE;
+$txt-link: #037BFE;
 
 // アクセントカラー(テキスト下線・ボタンカラー)
 $accent-color: #05BBDD;
 
 // フォントスタイル
 $ff-gothic: 'Noto Sans JP', sans-serif;
-$fz-base: 16px;
+$fz-base: 1.6rem;
 $ff-base: $ff-gothic;
 $fw-base: 500;
 $lh-base: 1.7;

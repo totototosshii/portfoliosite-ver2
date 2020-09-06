@@ -7,7 +7,7 @@
       <p class="contact-read">
         制作のご依頼やご相談(無料)など、お気軽にご連絡ください。
       </p><!-- /.contact-read -->
-      <a href="<?php echo home_url('/contact'); ?>" class="link-btn">
+      <a href="<?php echo home_url('/contact'); ?>" class="el_linkBtn">
         <i class="fas fa-arrow-right"></i>
         お問い合わせページ
       </a>

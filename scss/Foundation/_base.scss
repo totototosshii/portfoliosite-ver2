@@ -1,9 +1,12 @@
 // サイトを構成する上で、デザインの基本の下地、土台となるスタイルを定義
 // 基本的にタグ自体にスタイルを定義すること
+html{
+  font-size: 62.5%;
+}
 
 body{
   background-color: $bgc;
-  color:$textc;
+  color:$txt-d;
   font-family: $ff-base;
   font-size: $fz-base;
   line-height: $lh-base;

@@ -27,10 +27,10 @@
               <!-- ACFの投稿 -->
               <?php the_field('home_message'); ?>
             </p><!-- /.about-message -->
-            <a href="<?php echo home_url('/about'); ?>" class="link-btn">
+            <a href="<?php echo home_url('/about'); ?>" class="el_linkBtn">
               <i class="fas fa-arrow-right"></i>
                 プロフィールを見る
-            </a><!-- /.link-btn -->
+            </a><!-- /el_linkBtn -->
           </div><!-- /.about-content -->
         </div><!-- /.section-content -->
       </div><!-- /.section-inner -->
@@ -45,10 +45,10 @@
             <!-- pickup -->
             <?php get_template_part('template-parts/pickup-tag'); ?>
           </ul><!-- /.works-items -->
-          <a href="<?php echo home_url('/category/all'); ?>" class="link-btn">
+          <a href="<?php echo home_url('/category/all'); ?>" class="el_linkBtn">
             <i class="fas fa-arrow-right"></i>
             制作実績一覧
-          </a><!-- /.link-btn -->
+          </a><!-- /el_linkBtn -->
         </div><!-- /.section-content -->
       </div><!-- /.section-inner -->
     </section><!-- /.section -->

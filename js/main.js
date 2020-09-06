@@ -15,7 +15,7 @@ jQuery('.drawer-btn').on('click', function () {
 // --------------------------------
 window.onscroll = () => {
   //ボタンの要素を取得
-  let topButton = document.getElementById('scrollTop');
+  let topButton = document.getElementById('el_scrollTop');
 
   //スクロール量を取得する関数
   function getScrolled() {

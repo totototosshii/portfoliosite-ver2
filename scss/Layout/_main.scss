@@ -514,8 +514,8 @@
           font-weight: bold;
           margin: 5px 0;
           a{
-            color: $text-link;
-            border-bottom: 2px solid $text-link;
+            color: $txt-link;
+            border-bottom: 2px solid $txt-link;
             &:hover {
               transition: 0.8s;
               opacity: 0.5;
@@ -843,15 +843,15 @@
         width: 16px;
         height: 16px;
         border-radius: 50%;
-        background-color: $text-link;
+        background-color: $txt-link;
         position: absolute;
         top: 26px;
         left: -9px;
       }
       a{
-        color: $text-link;
+        color: $txt-link;
         font-weight: bold;
-        border-bottom: 2px solid $text-link;
+        border-bottom: 2px solid $txt-link;
         &:hover, &:focus{
           transition: 0.8s;
           opacity: 0.5;
@@ -969,7 +969,7 @@
       }
       a{
         display: inline-block;
-        color:$textc;
+        color:$txt-d;
         font-size: 20px;
         padding: 10px;
         @include mq('sp'){
@@ -1079,9 +1079,9 @@
     }
   }
   .privacy-policy a{
-    color: $text-link;
+    color: $txt-link;
     font-weight: $fw-base;
-    border-bottom: 2px solid $text-link;
+    border-bottom: 2px solid $txt-link;
     &:hover {
       transition: 0.8s;
       opacity: 0.5;
@@ -1195,8 +1195,8 @@
       padding-bottom: 20px;
     }
     a{
-      color: $text-link;
-      border-bottom: 2px solid $text-link;
+      color: $txt-link;
+      border-bottom: 2px solid $txt-link;
       font-weight: $fw-base;
       &:hover {
         transition: 0.8s;

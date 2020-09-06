@@ -473,11 +473,15 @@ template {
   display: none;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   background-color: #eaf9fb;
   color: #30323D;
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.7;
   letter-spacing: 0.08em;
 }
@@ -2317,56 +2321,56 @@ body.noScroll {
   }
 }
 
-.link-btn {
+.el_linkBtn {
   display: inline-block;
   margin: 0 auto;
-  max-width: 240px;
   background-color: #05BBDD;
   color: #f5f5f5;
   border-radius: 5px;
   padding: 14px 16px;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: bold;
   letter-spacing: .11em;
 }
 
-.link-btn:hover, .link-btn:focus {
+.el_linkBtn:hover, .el_linkBtn:focus {
   background-color: #28536B;
   color: #f5f5f5;
 }
 
-.scrollTop {
-  position: relative;
+.el_scrollTop {
   position: fixed;
   right: 8px;
   bottom: 8px;
   width: 50px;
   height: 50px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #05BBDD;
   border-radius: 50%;
-  display: none;
+  opacity: 0;
 }
 
-.scrollTop:hover, .scrollTop:focus {
+.el_scrollTop .fa-chevron-up {
+  color: #f5f5f5;
+}
+
+.el_scrollTop.is-fadeIn {
+  opacity: 1;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.el_scrollTop.is-fadeIn:hover, .el_scrollTop.is-fadeIn:focus {
   -webkit-transform: translateY(-5px);
       -ms-transform: translateY(-5px);
           transform: translateY(-5px);
-  -webkit-transition: all .7s;
-  transition: all .7s;
-}
-
-.scrollTop .fa-chevron-up {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: #fff;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.scrollTop.is-fadeIn {
-  display: block;
-  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
