@@ -109,6 +109,9 @@
     height: 100vh;
     background: linear-gradient( rgba(0, 64, 193, .5)),url(../images/fv.jpg) no-repeat center center/cover;
     position: relative;
+    @include mq('sp'){
+      background: linear-gradient( rgba(0, 64, 193, .5)),url(../images/fv-sp.jpg) no-repeat center center/cover;
+    }
     .fv-title-wrapper{
       position: absolute;
       top: 35%;
