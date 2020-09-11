@@ -19,19 +19,19 @@
         <h3 class="section-title">About</h3><!-- /.section-title -->
         <p class="section-title-ja">− 私について −</p><!-- /.section-title-ja -->
         <div class="section-content">
-          <figure class="about-img">
-            <img src="<?php echo esc_url(get_theme_file_uri('images/pr.png')); ?>" alt="サイトの制作者が森の中で立っている">
-          </figure><!-- /.about-img -->
           <div class="about-content">
+            <figure class="about-img">
+              <img src="<?php echo esc_url(get_theme_file_uri('images/pr.png')); ?>" alt="サイトの制作者が森の中で立っている">
+            </figure><!-- /.about-img -->
             <p class="about-message">
               <!-- ACFの投稿 -->
               <?php the_field('home_message'); ?>
             </p><!-- /.about-message -->
-            <a href="<?php echo home_url('/about'); ?>" class="el_linkBtn">
-              <i class="fas fa-arrow-right"></i>
-                プロフィールを見る
-            </a><!-- /el_linkBtn -->
           </div><!-- /.about-content -->
+          <a href="<?php echo home_url('/about'); ?>" class="el_linkBtn">
+            <i class="fas fa-arrow-right"></i>
+              プロフィールを見る
+          </a><!-- /el_linkBtn -->
         </div><!-- /.section-content -->
       </div><!-- /.section-inner -->
     </section><!-- /.section -->

@@ -3,7 +3,6 @@
 // -----------------------
 .el_linkBtn{
   display: inline-block;
-  margin: 0 auto;
   background-color: $accent-color;
   color: $txt-w;
   border-radius: 5px;
@@ -11,6 +10,7 @@
   font-size: 1.8rem;
   font-weight: bold;
   letter-spacing: .11em;
+  margin: 0 auto;
   &:hover, &:focus{
     background-color: #28536B;
     color: $txt-w;
