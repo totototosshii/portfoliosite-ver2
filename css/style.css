@@ -480,8 +480,9 @@ html {
 body {
   background-color: #eaf9fb;
   color: #30323D;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: ryo-gothic-plusn, sans-serif;
   font-size: 1.6rem;
+  font-weight: 500;
   line-height: 1.7;
   letter-spacing: 0.08em;
 }
@@ -1271,6 +1272,7 @@ body.noScroll {
 }
 
 .about .section:first-of-type .profile-message span {
+  font-size: 1.7rem;
   font-weight: bold;
 }
 
@@ -2241,7 +2243,7 @@ body.noScroll {
 }
 
 .single .section:first-of-type .section-title {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: ryo-gothic-plusn, sans-serif;
   font-size: 24px;
   padding-top: 15px;
   margin-bottom: 50px;
@@ -2275,7 +2277,7 @@ body.noScroll {
 .single .section:first-of-type .explanation-list {
   width: 35%;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: bold;
   padding-bottom: 40px;
 }
 
@@ -2301,7 +2303,6 @@ body.noScroll {
 .single .explanation-text a {
   color: #037BFE;
   border-bottom: 2px solid #037BFE;
-  font-weight: 500;
 }
 
 .single .explanation-text a:hover {

@@ -393,6 +393,7 @@
     .profile-message{
       text-align: justify;
       span{
+        font-size: 1.7rem;
         font-weight: bold;
       }
       @include mq('tab'){
@@ -1188,7 +1189,7 @@
     .explanation-list{
       width: 35%;
       font-size: 18px;
-      font-weight: $fw-base;
+      font-weight: bold;
       padding-bottom: 40px;
       @include mq('sp'){
         font-size: 16px;
@@ -1206,7 +1207,6 @@
     a{
       color: $txt-link;
       border-bottom: 2px solid $txt-link;
-      font-weight: $fw-base;
       &:hover {
         transition: 0.8s;
         opacity: 0.5;

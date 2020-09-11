@@ -35,13 +35,41 @@ function my_menu_init() {
 add_action( 'init', 'my_menu_init' );
 
 
+// Google FontsとAdobe Fontsの読み込み
+add_action( 'wp_head', function() {
+?>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'mug8qcw',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+<?php
+});
+add_action('wp_head', 'script_fa_cdn');
+
+
+// Font Awesomeの読み込み
+function script_fa_cdn(){
+  $link = <<<EOT
+<script src="https://kit.fontawesome.com/cba31e06f6.js" crossorigin="anonymous"></script>
+EOT;
+  echo $link;
+};
+
+
 /* CSSファイル読み込み */
 function my_styles() {
   wp_enqueue_style(
     'style-css',
     get_template_directory_uri() . '/css/style.css',
     array(),
-    '1.4.5',
+    '1.4.7',
     'all'
   );
 }
