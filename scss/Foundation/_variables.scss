@@ -36,13 +36,3 @@ $breakpoints: (
     @content;
   }
 }
-
-// 割り算					   分子				   分母
-@function division($numerator, $denominator) {
-  @return $numerator / $denominator;
-}
-
-// vw計算
-@function vw($width, $px) {
-  @return $px / ($width - 1) * 100vw;
-}

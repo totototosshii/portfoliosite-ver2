@@ -478,8 +478,8 @@ html {
 }
 
 body {
-  background-color: #eaf9fb;
   color: #444555;
+  background-color: #eaf9fb;
   font-family: ryo-gothic-plusn, sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
@@ -492,8 +492,8 @@ img {
 }
 
 a:hover {
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .6s;
+  transition: all .6s;
 }
 
 .section-inner {
@@ -604,7 +604,7 @@ a:hover {
 }
 
 .header-logo {
-  font-size: 32px;
+  font-size: 3.2rem;
 }
 
 @media (max-width: 767px) {
@@ -622,7 +622,7 @@ a:hover {
 }
 
 .header-menu {
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 70px;
 }
 
@@ -657,8 +657,6 @@ a:hover {
 @media (min-width: 1180px) {
   .header-menu a:hover {
     background-color: rgba(248, 140, 45, 0.8);
-    -webkit-transition: all .6s;
-    transition: all .6s;
   }
 }
 
@@ -668,8 +666,6 @@ a:hover {
   }
   .header-menu a:hover {
     background-color: rgba(248, 140, 45, 0.8);
-    -webkit-transition: all .6s;
-    transition: all .6s;
   }
 }
 
@@ -741,7 +737,7 @@ body.noScroll {
 
 @media (max-width: 767px) {
   .site-title {
-    font-size: 6rem;
+    font-size: 5.6rem;
   }
 }
 
@@ -752,7 +748,64 @@ body.noScroll {
 
 @media (max-width: 767px) {
   .sub-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+}
+
+.about .fv, .contact .fv, .single .fv {
+  width: 100vw;
+  height: 500px;
+  position: relative;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 64, 193, 0.7)), to(rgba(0, 149, 193, 0.7)));
+  background: linear-gradient(0deg, rgba(0, 64, 193, 0.7), rgba(0, 149, 193, 0.7));
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 14s ease infinite;
+          animation: AnimationName 14s ease infinite;
+}
+
+@media (max-width: 767px) {
+  .about .fv, .contact .fv, .single .fv {
+    height: 350px;
+  }
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+.about .fv .fv-title-wrapper, .contact .fv .fv-title-wrapper, .single .fv .fv-title-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #eaf9fb;
+}
+
+@media (max-width: 767px) {
+  .about .fv .fv-title-wrapper, .contact .fv .fv-title-wrapper, .single .fv .fv-title-wrapper {
+    left: 0;
   }
 }
 
@@ -769,14 +822,14 @@ body.noScroll {
 }
 
 .section .section-title {
-  font-size: 64px;
+  font-size: 6.4rem;
   text-align: center;
   line-height: 1;
 }
 
 @media (max-width: 767px) {
   .section .section-title {
-    font-size: 64px;
+    font-size: 5.6rem;
   }
 }
 
@@ -818,12 +871,12 @@ body.noScroll {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 30px;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 @media (max-width: 767px) {
   .breadcrumbs {
-    font-size: 12px;
+    font-size: 1.2rem;
   }
 }
 
@@ -1114,69 +1167,12 @@ body.noScroll {
 }
 
 .home .section:nth-of-type(3) .section-content .service-title {
-  font-size: 26px;
+  font-size: 2.6rem;
   padding-bottom: 8px;
 }
 
 .home .section:nth-of-type(3) .section-content .service-text {
   text-align: justify;
-}
-
-.about .fv {
-  width: 100vw;
-  height: 500px;
-  position: relative;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 64, 193, 0.7)), to(rgba(0, 149, 193, 0.7)));
-  background: linear-gradient(0deg, rgba(0, 64, 193, 0.7), rgba(0, 149, 193, 0.7));
-  background-size: 400% 400%;
-  -webkit-animation: AnimationName 14s ease infinite;
-          animation: AnimationName 14s ease infinite;
-}
-
-@media (max-width: 767px) {
-  .about .fv {
-    height: 350px;
-  }
-}
-
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 50% 0%;
-  }
-  50% {
-    background-position: 50% 100%;
-  }
-  100% {
-    background-position: 50% 0%;
-  }
-}
-
-@keyframes AnimationName {
-  0% {
-    background-position: 50% 0%;
-  }
-  50% {
-    background-position: 50% 100%;
-  }
-  100% {
-    background-position: 50% 0%;
-  }
-}
-
-.about .fv .fv-title-wrapper {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  color: #eaf9fb;
-}
-
-@media (max-width: 767px) {
-  .about .fv .fv-title-wrapper {
-    left: 0;
-  }
 }
 
 .about .section:first-of-type .section-content {
@@ -1329,7 +1325,7 @@ body.noScroll {
 
 @media (min-width: 768px) and (max-width: 1179px) {
   .about .section:nth-of-type(2) .section-content:last-of-type {
-    width: 70%;
+    width: 71%;
     padding-top: 30px;
   }
 }
@@ -1343,7 +1339,7 @@ body.noScroll {
 
 .about .section:nth-of-type(2) .skill-head, .about .section:nth-of-type(2) .qualification-head, .about .section:nth-of-type(2) .environment-head {
   display: inline-block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: bold;
   border-bottom: 2px solid #05BBDD;
   margin-bottom: 12px;
@@ -1351,7 +1347,7 @@ body.noScroll {
 
 @media (max-width: 767px) {
   .about .section:nth-of-type(2) .skill-head, .about .section:nth-of-type(2) .qualification-head, .about .section:nth-of-type(2) .environment-head {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 }
 
@@ -1451,7 +1447,7 @@ body.noScroll {
 
 .about .section:nth-of-type(2) .skill-items .skill-item .rate {
   position: relative;
-  font-size: 20px;
+  font-size: 2rem;
   letter-spacing: 0px;
   margin: 0 5px;
 }
@@ -1612,7 +1608,7 @@ body.noScroll {
   left: 0;
   line-height: 1em;
   overflow: hidden;
-  width: 80rem;
+  width: 80px;
   content: "★★★★★";
 }
 
@@ -1716,7 +1712,7 @@ body.noScroll {
 
 .about .section:nth-of-type(3) .career-head {
   display: inline-block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 8px;
   border-bottom: 2px solid #05BBDD;
@@ -1724,7 +1720,7 @@ body.noScroll {
 
 @media (max-width: 767px) {
   .about .section:nth-of-type(3) .career-head {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 }
 
@@ -1749,7 +1745,7 @@ body.noScroll {
 
 .about .section:nth-of-type(3) .career-list {
   width: 15%;
-  font-size: 18px;
+  font-size: 1.8rem;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
@@ -1840,7 +1836,7 @@ body.noScroll {
 }
 
 .about .section:nth-of-type(3) .career-text .emphasis {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .about .section:nth-of-type(3) .career-text:first-of-type::before {
@@ -1884,7 +1880,7 @@ body.noScroll {
 
 .about .section:nth-of-type(4) .future-title {
   display: inline-block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 8px;
   border-bottom: 2px solid #05BBDD;
@@ -1892,7 +1888,7 @@ body.noScroll {
 
 @media (max-width: 767px) {
   .about .section:nth-of-type(4) .future-title {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 }
 
@@ -1998,13 +1994,13 @@ body.noScroll {
 .archive .l-section .left-nav-item a, .website .l-section .left-nav-item a, .wordpress .l-section .left-nav-item a, .other .l-section .left-nav-item a {
   display: inline-block;
   color: #444555;
-  font-size: 20px;
+  font-size: 2rem;
   padding: 10px;
 }
 
 @media (max-width: 767px) {
   .archive .l-section .left-nav-item a, .website .l-section .left-nav-item a, .wordpress .l-section .left-nav-item a, .other .l-section .left-nav-item a {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 }
 
@@ -2075,51 +2071,6 @@ body.noScroll {
   }
 }
 
-.contact .fv {
-  width: 100vw;
-  height: 500px;
-  position: relative;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 64, 193, 0.7)), to(rgba(0, 149, 193, 0.7)));
-  background: linear-gradient(0deg, rgba(0, 64, 193, 0.7), rgba(0, 149, 193, 0.7));
-  background-size: 400% 400%;
-  -webkit-animation: AnimationName 14s ease infinite;
-          animation: AnimationName 14s ease infinite;
-}
-
-@media (max-width: 767px) {
-  .contact .fv {
-    height: 350px;
-  }
-}
-
-@keyframes AnimationName {
-  0% {
-    background-position: 50% 0%;
-  }
-  50% {
-    background-position: 50% 100%;
-  }
-  100% {
-    background-position: 50% 0%;
-  }
-}
-
-.contact .fv .fv-title-wrapper {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  color: #eaf9fb;
-}
-
-@media (max-width: 767px) {
-  .contact .fv .fv-title-wrapper {
-    left: 0;
-  }
-}
-
 .contact .privacy-policy a {
   color: #037BFE;
   font-weight: 500;
@@ -2130,51 +2081,6 @@ body.noScroll {
   -webkit-transition: 0.8s;
   transition: 0.8s;
   opacity: 0.5;
-}
-
-.single .fv {
-  width: 100vw;
-  height: 500px;
-  position: relative;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 64, 193, 0.7)), to(rgba(0, 149, 193, 0.7)));
-  background: linear-gradient(0deg, rgba(0, 64, 193, 0.7), rgba(0, 149, 193, 0.7));
-  background-size: 400% 400%;
-  -webkit-animation: AnimationName 14s ease infinite;
-          animation: AnimationName 14s ease infinite;
-}
-
-@media (max-width: 767px) {
-  .single .fv {
-    height: 350px;
-  }
-}
-
-@keyframes AnimationName {
-  0% {
-    background-position: 50% 0%;
-  }
-  50% {
-    background-position: 50% 100%;
-  }
-  100% {
-    background-position: 50% 0%;
-  }
-}
-
-.single .fv .fv-title-wrapper {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  color: #eaf9fb;
-}
-
-@media (max-width: 767px) {
-  .single .fv .fv-title-wrapper {
-    left: 0;
-  }
 }
 
 @media (max-width: 767px) {
@@ -2198,14 +2104,14 @@ body.noScroll {
 
 .single .section:first-of-type .section-title {
   font-family: ryo-gothic-plusn, sans-serif;
-  font-size: 24px;
+  font-size: 2.4rem;
   padding-top: 15px;
   margin-bottom: 50px;
 }
 
 @media (max-width: 767px) {
   .single .section:first-of-type .section-title {
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 1.7;
   }
 }
@@ -2230,14 +2136,14 @@ body.noScroll {
 
 .single .section:first-of-type .explanation-list {
   width: 35%;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: bold;
   padding-bottom: 40px;
 }
 
 @media (max-width: 767px) {
   .single .section:first-of-type .explanation-list {
-    font-size: 16px;
+    font-size: 1.6rem;
     padding-bottom: 20px;
   }
 }
