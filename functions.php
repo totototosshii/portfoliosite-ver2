@@ -69,7 +69,7 @@ function my_styles() {
     'style-css',
     get_template_directory_uri() . '/css/style.css',
     array(),
-    '1.4.8',
+    '1.5.7',
     'all'
   );
 }

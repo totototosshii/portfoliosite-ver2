@@ -479,7 +479,7 @@ html {
 
 body {
   background-color: #eaf9fb;
-  color: #30323D;
+  color: #444555;
   font-family: ryo-gothic-plusn, sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
@@ -734,6 +734,28 @@ body.noScroll {
   font-family: 'Caveat', cursive;
 }
 
+.site-title {
+  font-size: 8rem;
+  line-height: 1.1;
+}
+
+@media (max-width: 767px) {
+  .site-title {
+    font-size: 6rem;
+  }
+}
+
+.sub-title {
+  font-size: 2.4rem;
+  padding-left: 10px;
+}
+
+@media (max-width: 767px) {
+  .sub-title {
+    font-size: 2rem;
+  }
+}
+
 .section {
   padding: 50px 0;
 }
@@ -826,9 +848,21 @@ body.noScroll {
 .home .fv {
   width: 100vw;
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 64, 193, 0.5))), url(../images/fv.jpg) no-repeat center center/cover;
-  background: linear-gradient(rgba(0, 64, 193, 0.5)), url(../images/fv.jpg) no-repeat center center/cover;
   position: relative;
+}
+
+@media (min-width: 1180px) {
+  .home .fv {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 64, 193, 0.5))), url(../images/fv.jpg) no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 64, 193, 0.5)), url(../images/fv.jpg) no-repeat center center/cover;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1179px) {
+  .home .fv {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 64, 193, 0.5))), url(../images/fv.jpg) no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 64, 193, 0.5)), url(../images/fv.jpg) no-repeat center center/cover;
+  }
 }
 
 @media (max-width: 767px) {
@@ -848,28 +882,6 @@ body.noScroll {
 @media (max-width: 767px) {
   .home .fv .fv-title-wrapper {
     left: 0;
-  }
-}
-
-.home .fv .site-title {
-  font-size: 80px;
-  line-height: 1.1;
-}
-
-@media (max-width: 767px) {
-  .home .fv .site-title {
-    font-size: 60px;
-  }
-}
-
-.home .fv .sub-title {
-  font-size: 24px;
-  padding-left: 10px;
-}
-
-@media (max-width: 767px) {
-  .home .fv .sub-title {
-    font-size: 20px;
   }
 }
 
@@ -1167,28 +1179,6 @@ body.noScroll {
   }
 }
 
-.about .fv .site-title {
-  font-size: 80px;
-  line-height: 1.1;
-}
-
-@media (max-width: 767px) {
-  .about .fv .site-title {
-    font-size: 60px;
-  }
-}
-
-.about .fv .sub-title {
-  font-size: 24px;
-  padding-left: 10px;
-}
-
-@media (max-width: 767px) {
-  .about .fv .sub-title {
-    font-size: 20px;
-  }
-}
-
 .about .section:first-of-type .section-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1264,7 +1254,7 @@ body.noScroll {
 }
 
 .about .section:first-of-type .profile-message span {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
@@ -1622,7 +1612,7 @@ body.noScroll {
   left: 0;
   line-height: 1em;
   overflow: hidden;
-  width: 80px;
+  width: 80rem;
   content: "★★★★★";
 }
 
@@ -1695,9 +1685,15 @@ body.noScroll {
   padding-top: 0;
 }
 
+@media (min-width: 768px) and (max-width: 1179px) {
+  .about .section:nth-of-type(3) {
+    padding-bottom: 60px;
+  }
+}
+
 @media (max-width: 767px) {
   .about .section:nth-of-type(3) {
-    padding-bottom: 120px;
+    padding-bottom: 180px;
   }
 }
 
@@ -1857,6 +1853,16 @@ body.noScroll {
   }
 }
 
+.about .section:nth-of-type(4) {
+  padding-top: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1179px) {
+  .about .section:nth-of-type(4) {
+    padding-top: 50px;
+  }
+}
+
 .about .section:nth-of-type(4) .section-content {
   margin: 0 auto;
   padding-left: 55px;
@@ -1991,7 +1997,7 @@ body.noScroll {
 
 .archive .l-section .left-nav-item a, .website .l-section .left-nav-item a, .wordpress .l-section .left-nav-item a, .other .l-section .left-nav-item a {
   display: inline-block;
-  color: #30323D;
+  color: #444555;
   font-size: 20px;
   padding: 10px;
 }
@@ -2114,28 +2120,6 @@ body.noScroll {
   }
 }
 
-.contact .fv .site-title {
-  font-size: 80px;
-  line-height: 1.1;
-}
-
-@media (max-width: 767px) {
-  .contact .fv .site-title {
-    font-size: 60px;
-  }
-}
-
-.contact .fv .sub-title {
-  font-size: 24px;
-  padding-left: 10px;
-}
-
-@media (max-width: 767px) {
-  .contact .fv .sub-title {
-    font-size: 20px;
-  }
-}
-
 .contact .privacy-policy a {
   color: #037BFE;
   font-weight: 500;
@@ -2190,28 +2174,6 @@ body.noScroll {
 @media (max-width: 767px) {
   .single .fv .fv-title-wrapper {
     left: 0;
-  }
-}
-
-.single .fv .site-title {
-  font-size: 80px;
-  line-height: 1.1;
-}
-
-@media (max-width: 767px) {
-  .single .fv .site-title {
-    font-size: 60px;
-  }
-}
-
-.single .fv .sub-title {
-  font-size: 24px;
-  padding-left: 10px;
-}
-
-@media (max-width: 767px) {
-  .single .fv .sub-title {
-    font-size: 20px;
   }
 }
 

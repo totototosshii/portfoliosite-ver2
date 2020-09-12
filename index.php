@@ -60,7 +60,7 @@
         <div class="section-content">
           <div class="service-menu">
             <figure class="service-menu-icon">
-              <img src="<?php echo esc_url(get_theme_file_uri('images/design.png')); ?>" alt="デザインのアイコン">
+              <img src="<?php echo esc_url(get_theme_file_uri('images/design.png')); ?>" loading="lazy" alt="デザインのアイコン" width="128" height="128">
             </figure><!-- /.service-menu-icon -->
             <h3 class="service-title">Design</h3><!-- /.service-title -->
             <p class="service-text">
@@ -70,7 +70,7 @@
           </div><!-- /.service-menu -->
           <div class="service-menu">
             <figure class="service-menu-icon">
-              <img src="<?php echo esc_url(get_theme_file_uri('images/code.png')); ?>" alt="コーディングアイコン">
+              <img src="<?php echo esc_url(get_theme_file_uri('images/code.png')); ?>" loading="lazy" alt="コーディングアイコン" width="128" height="128">
             </figure><!-- /.service-menu-icon -->
             <h3 class="service-title">Coding</h3><!-- /.section-title -->
             <p class="service-text">
@@ -80,7 +80,7 @@
           </div><!-- /.service-menu -->
           <div class="service-menu">
             <figure class="service-menu-icon">
-              <img src="<?php echo esc_url(get_theme_file_uri('images/wordpress.png')); ?>" alt="WordPressのロゴ">
+              <img src="<?php echo esc_url(get_theme_file_uri('images/wordpress.png')); ?>" loading="lazy" alt="WordPressのロゴ" width="128" height="128">
             </figure><!-- /.service-menu-icon -->
             <h3 class="service-title">WordPress</h3><!-- /.section-title -->
             <p class="service-text">

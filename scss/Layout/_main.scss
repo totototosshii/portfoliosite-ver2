@@ -11,6 +11,25 @@
 }
 
 // -----------------------
+// ファーストビュー内のタイトル
+// -----------------------
+.site-title{
+  font-size: 8rem;
+  line-height: 1.1;
+  @include mq('sp'){
+    font-size: 6rem;
+  }
+}
+
+.sub-title{
+  font-size: 2.4rem;
+  padding-left: 10px;
+  @include mq('sp'){
+    font-size: 2rem;
+  }
+}
+
+// -----------------------
 // sectionのスタイル
 // -----------------------
 .section{
@@ -107,8 +126,13 @@
   .fv {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient( rgba(0, 64, 193, .5)),url(../images/fv.jpg) no-repeat center center/cover;
     position: relative;
+    @include mq('pc'){
+      background: linear-gradient( rgba(0, 64, 193, .5)),url(../images/fv.jpg) no-repeat center center/cover;
+    }
+    @include mq('tab'){
+      background: linear-gradient( rgba(0, 64, 193, .5)),url(../images/fv.jpg) no-repeat center center/cover;
+    }
     @include mq('sp'){
       background: linear-gradient( rgba(0, 64, 193, .5)),url(../images/fv-sp.jpg) no-repeat center center/cover;
     }
@@ -119,20 +143,6 @@
       color: #f5f5f5;
       @include mq('sp'){
         left: 0;
-      }
-    }
-    .site-title{
-      font-size: 80px;
-      line-height: 1.1;
-      @include mq('sp'){
-        font-size: 60px;
-      }
-    }
-    .sub-title{
-      font-size: 24px;
-      padding-left: 10px;
-      @include mq('sp'){
-        font-size: 20px;
       }
     }
     // -----------------------
@@ -330,20 +340,6 @@
         left: 0;
       }
     }
-    .site-title{
-      font-size: 80px;
-      line-height: 1.1;
-      @include mq('sp'){
-        font-size: 60px;
-      }
-    }
-    .sub-title{
-      font-size: 24px;
-      padding-left: 10px;
-      @include mq('sp'){
-        font-size: 20px;
-      }
-    }
   }
   // -----------------------
   // profileセクション
@@ -388,7 +384,7 @@
     .profile-message{
       text-align: justify;
       span{
-        font-size: 1.7rem;
+        font-size: 1.8rem;
         font-weight: bold;
       }
       @include mq('tab'){
@@ -684,7 +680,7 @@
             left: 0;
             line-height:1em;
             overflow:hidden;
-            width: 80px;
+            width: 80rem;
             content:"★★★★★";
           }
         }
@@ -766,8 +762,11 @@
   // -----------------------
   .section:nth-of-type(3){
     padding-top: 0;
+    @include mq('tab'){
+      padding-bottom: 60px;
+    }
     @include mq('sp'){
-      padding-bottom: 120px;
+      padding-bottom: 180px;
     }
     .section-content{
       margin: 0 auto;
@@ -877,6 +876,10 @@
   // futureセクション
   // -----------------------
   .section:nth-of-type(4){
+    padding-top: 0;
+    @include mq('tab'){
+      padding-top: 50px;
+    }
     .section-content{
       margin: 0 auto;
       padding-left: 55px;
@@ -1068,20 +1071,6 @@
         left: 0;
       }
     }
-    .site-title{
-      font-size: 80px;
-      line-height: 1.1;
-      @include mq('sp'){
-        font-size: 60px;
-      }
-    }
-    .sub-title{
-      font-size: 24px;
-      padding-left: 10px;
-      @include mq('sp'){
-        font-size: 20px;
-      }
-    }
   }
   .privacy-policy a{
     color: $txt-link;
@@ -1126,20 +1115,6 @@
       color: $bgc;
       @include mq('sp'){
         left: 0;
-      }
-    }
-    .site-title{
-      font-size: 80px;
-      line-height: 1.1;
-      @include mq('sp'){
-        font-size: 60px;
-      }
-    }
-    .sub-title{
-      font-size: 24px;
-      padding-left: 10px;
-      @include mq('sp'){
-        font-size: 20px;
       }
     }
   }
