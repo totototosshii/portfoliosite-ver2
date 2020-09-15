@@ -89,22 +89,29 @@ function my_scripts() {
 add_action( 'wp_enqueue_scripts', 'my_scripts' );
 
 
-/**
- *    contactform7の読み込み制限
- */
+/* contactform7の読み込み制限 */
 function cf7_limitation() {
     add_filter( 'wpcf7_load_js', '__return_false' );
     add_filter( 'wpcf7_load_css', '__return_false' );
     if( is_page( 'contact' ) ){
-        if ( function_exists( 'wpcf7_enqueue_scripts' ) ) {
-            wpcf7_enqueue_scripts();
-        }
-    if ( function_exists( 'wpcf7_enqueue_styles' ) ) {
-        wpcf7_enqueue_styles();
-    }
+      if ( function_exists( 'wpcf7_enqueue_scripts' ) ) {
+          wpcf7_enqueue_scripts();
+      }
+      if ( function_exists( 'wpcf7_enqueue_styles' ) ) {
+          wpcf7_enqueue_styles();
+      }
     }
 }
 add_action( 'template_redirect', 'cf7_limitation' );
+
+
+/* お問い合わせページを除き、「reCAPTCHA」を読み込ませない */
+function load_recaptcha_js() {
+  if ( ! is_page( 'contact' ) ) {
+    wp_deregister_script( 'google-recaptcha' );
+  }
+}
+add_action( 'wp_enqueue_scripts', 'load_recaptcha_js' );
 
 
 /* 固定ページ毎に設定したスラッグをclassとして<body>に追加 */
