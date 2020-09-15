@@ -30,8 +30,16 @@
   background: $accent-color;
   border-radius: 50%;
   opacity: 0;
-  .fa-chevron-up{
-    color: $txt-w;
+  &:before{
+    content: "";
+    position: absolute;
+    top: 44%;
+    left: 55%;
+    transform: rotate(-45deg) translate(-50%, -50%);
+    width: 13px;
+    height: 13px;
+    border-top: 3px solid $txt-w;
+    border-right: 3px solid $txt-w;
   }
 }
 

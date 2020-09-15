@@ -5,7 +5,7 @@
   </footer><!-- /.footer -->
 
   <!-- スクロールトップボタン -->
-  <button type="button" id="el_scrollTop" class="el_scrollTop"><i class="fas fa-chevron-up fa-lg"></i></button>
+  <button type="button" id="el_scrollTop" class="el_scrollTop"></button>
 
   <?php wp_footer(); ?>
   </body><!-- /.home -->

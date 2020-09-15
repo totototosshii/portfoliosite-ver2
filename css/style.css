@@ -2221,8 +2221,18 @@ body.noScroll {
   opacity: 0;
 }
 
-.el_scrollTop .fa-chevron-up {
-  color: #f5f5f5;
+.el_scrollTop:before {
+  content: "";
+  position: absolute;
+  top: 44%;
+  left: 55%;
+  -webkit-transform: rotate(-45deg) translate(-50%, -50%);
+      -ms-transform: rotate(-45deg) translate(-50%, -50%);
+          transform: rotate(-45deg) translate(-50%, -50%);
+  width: 13px;
+  height: 13px;
+  border-top: 3px solid #f5f5f5;
+  border-right: 3px solid #f5f5f5;
 }
 
 .el_scrollTop.is-fadeIn {
