@@ -38,7 +38,7 @@ add_action( 'init', 'my_menu_init' );
 // Google FontsとAdobe Fontsの読み込み
 add_action( 'wp_head', function() {
 ?>
-<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap&text=AabCcdefhiklnOoPrSsTtuvW2020&copy;" rel="stylesheet">
 <script>
   (function(d) {
     var config = {
@@ -87,6 +87,24 @@ function my_scripts() {
   );
 }
 add_action( 'wp_enqueue_scripts', 'my_scripts' );
+
+
+/**
+ *    contactform7の読み込み制限
+ */
+function cf7_limitation() {
+    add_filter( 'wpcf7_load_js', '__return_false' );
+    add_filter( 'wpcf7_load_css', '__return_false' );
+    if( is_page( 'contact' ) ){
+        if ( function_exists( 'wpcf7_enqueue_scripts' ) ) {
+            wpcf7_enqueue_scripts();
+        }
+    if ( function_exists( 'wpcf7_enqueue_styles' ) ) {
+        wpcf7_enqueue_styles();
+    }
+    }
+}
+add_action( 'template_redirect', 'cf7_limitation' );
 
 
 /* 固定ページ毎に設定したスラッグをclassとして<body>に追加 */
