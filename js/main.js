@@ -25,17 +25,11 @@ window.onscroll = () => {
   //ボタンの表示・非表示
   (getScrolled() > 500) ? topButton.classList.add('is-fadeIn') : topButton.classList.remove('is-fadeIn');
 
-  //トップに移動する関数
-  function scrollToTop() {
-    let scrolled = getScrolled();
-    window.scrollTo(0, Math.floor(scrolled / 2));
-    if (scrolled > 0) {
-      window.setTimeout(scrollToTop, 60);
-    }
-  };
-
-  // スクロールトップ
+  // スクロールトップボタンクリック時
   topButton.onclick = () => {
-    scrollToTop();
+    let scrolled = getScrolled();
+
+    //トップに移動する関数
+    (scrolled > 0) ? window.scrollTo({ top: 0, behavior: 'smooth' }) : '';
   };
 };
