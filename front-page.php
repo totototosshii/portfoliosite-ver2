@@ -21,7 +21,7 @@
         <div class="section-content">
           <div class="about-content">
             <figure class="about-img">
-              <img src="<?php echo esc_url(get_theme_file_uri('images/pr.png')); ?>" alt="サイトの制作者が森の中で立っている">
+              <img src="<?php echo esc_url(get_theme_file_uri('images/pr.jpg')); ?>" alt="サイトの制作者が森の中で立っている">
             </figure><!-- /.about-img -->
             <p class="about-message">
               <!-- ACFの投稿 -->
