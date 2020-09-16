@@ -82,7 +82,7 @@ function my_scripts() {
     'script-js',
     get_template_directory_uri() . '/js/main.js',
     array( 'jquery' ),
-    '1.0.3',
+    '1.0.4',
     true
   );
 }
