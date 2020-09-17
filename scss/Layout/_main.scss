@@ -53,7 +53,7 @@
       top: 50%;
       left: 10%;
       transform: translateY(-50%);
-      color: $bgc;
+      color: $color-base;
       @include mq('sp'){
         left: 0;
       }
@@ -225,7 +225,7 @@
       content: '';
       width: 20px;
       height: 2px;
-      background-color: $bgc;
+      background-color: $color-base;
     }
     .arrows .arrow:before {
       transform: rotate(30deg) translateX(-39%);
@@ -403,7 +403,7 @@
   // 作業環境・資格・スキルセクション
   // -----------------------
   .section:nth-of-type(2){
-    background-color: $bgc;
+    background-color: $color-base;
     padding-top: 0;
     .section-inner{
       display: flex;
@@ -444,7 +444,7 @@
       display: inline-block;
       font-size: 2rem;
       font-weight: bold;
-      border-bottom: 2px solid $accent-color;
+      border-bottom: 2px solid $color-accent;
       margin-bottom: 12px;
       @include mq('sp'){
         font-size: 1.8rem;
@@ -503,8 +503,8 @@
           font-weight: bold;
           margin: 5px 0;
           a{
-            color: $txt-link;
-            border-bottom: 2px solid $txt-link;
+            color: $color-link;
+            border-bottom: 2px solid $color-link;
             &:hover {
               transition: 0.8s;
               opacity: 0.5;
@@ -534,7 +534,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: $accent-color;
+            color: $color-accent;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -548,7 +548,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: $accent-color;
+            color: $color-accent;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -562,7 +562,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: $accent-color;
+            color: $color-accent;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -576,7 +576,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: $accent-color;
+            color: $color-accent;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -593,7 +593,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: $accent-color;
+            color: $color-accent;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -607,7 +607,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: $accent-color;
+            color: $color-accent;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -621,7 +621,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: $accent-color;
+            color: $color-accent;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -635,7 +635,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: $accent-color;
+            color: $color-accent;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -649,7 +649,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: $accent-color;
+            color: $color-accent;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -663,7 +663,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: $accent-color;
+            color: $color-accent;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -677,7 +677,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: $accent-color;
+            color: $color-accent;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -691,7 +691,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: $accent-color;
+            color: $color-accent;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -705,7 +705,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: $accent-color;
+            color: $color-accent;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -719,7 +719,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: $accent-color;
+            color: $color-accent;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -733,7 +733,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: $accent-color;
+            color: $color-accent;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -747,7 +747,7 @@
           .rate:after{
             position: absolute;
             display: inline-block;
-            color: $accent-color;
+            color: $color-accent;
             white-space:nowrap;
             top: 0;
             left: 0;
@@ -786,7 +786,7 @@
       font-size: 2rem;
       font-weight: bold;
       margin-bottom: 8px;
-      border-bottom: 2px solid $accent-color;
+      border-bottom: 2px solid $color-accent;
       @include mq('sp'){
         font-size: 1.8rem;
       }
@@ -826,7 +826,7 @@
       padding-left: 40px;
       padding-top: 20px;
       padding-bottom: 20px;
-      border-left: 2px solid $accent-color;
+      border-left: 2px solid $color-accent;
       position: relative;
       @include mq('tab'){
         width: 75%;
@@ -850,15 +850,15 @@
         width: 16px;
         height: 16px;
         border-radius: 50%;
-        background-color: $txt-link;
+        background-color: $color-link;
         position: absolute;
         top: 26px;
         left: -9px;
       }
       a{
-        color: $txt-link;
+        color: $color-link;
         font-weight: bold;
-        border-bottom: 2px solid $txt-link;
+        border-bottom: 2px solid $color-link;
         &:hover, &:focus{
           transition: 0.8s;
           opacity: 0.5;
@@ -900,7 +900,7 @@
       font-size: 2rem;
       font-weight: bold;
       margin-bottom: 8px;
-      border-bottom: 2px solid $accent-color;
+      border-bottom: 2px solid $color-accent;
       @include mq('sp'){
         font-size: 1.8rem;
       }
@@ -980,7 +980,7 @@
       }
       a{
         display: inline-block;
-        color:$txt-d;
+        color:$color-dark;
         font-size: 2rem;
         padding: 10px;
         @include mq('sp'){
@@ -993,7 +993,7 @@
       }
     }
     .section:first-of-type{
-      background-color: $bgc;
+      background-color: $color-base;
       width: 100vw;
       text-align: center;
       padding-top: 70px;
@@ -1047,9 +1047,9 @@
 // -----------------------
 .contact{
   .privacy-policy a{
-    color: $txt-link;
+    color: $color-link;
     font-weight: $fw-base;
-    border-bottom: 2px solid $txt-link;
+    border-bottom: 2px solid $color-link;
     &:hover {
       transition: 0.8s;
       opacity: 0.5;
@@ -1120,8 +1120,8 @@
       padding-bottom: 20px;
     }
     a{
-      color: $txt-link;
-      border-bottom: 2px solid $txt-link;
+      color: $color-link;
+      border-bottom: 2px solid $color-link;
       &:hover {
         transition: 0.8s;
         opacity: 0.5;

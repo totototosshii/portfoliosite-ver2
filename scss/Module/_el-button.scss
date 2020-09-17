@@ -3,8 +3,8 @@
 // -----------------------
 .el_linkBtn{
   display: inline-block;
-  background-color: $accent-color;
-  color: $txt-w;
+  background-color: $color-accent;
+  color: $color-bright;
   border-radius: 5px;
   padding: 14px 16px;
   font-size: 1.8rem;
@@ -13,7 +13,7 @@
   margin: 0 auto;
   &:hover, &:focus{
     background-color: #28536B;
-    color: $txt-w;
+    color: $color-bright;
   }
 }
 
@@ -24,7 +24,7 @@
   bottom: 8px;
   width: 50px;
   height: 50px;
-  background: $accent-color;
+  background: $color-accent;
   border-radius: 50%;
   opacity: 0;
   &:before{
@@ -35,8 +35,8 @@
     transform: rotate(-45deg) translate(-50%, -50%);
     width: 13px;
     height: 13px;
-    border-top: 3px solid $txt-w;
-    border-right: 3px solid $txt-w;
+    border-top: 3px solid $color-bright;
+    border-right: 3px solid $color-bright;
   }
 }
 
