@@ -764,13 +764,7 @@
   // 経歴セクション
   // -----------------------
   .section:nth-of-type(3){
-    padding-top: 0;
-    @include mq('tab'){
-      padding-bottom: 60px;
-    }
-    @include mq('sp'){
-      padding-bottom: 180px;
-    }
+    padding: 0;
     .section-content{
       margin: 0 auto;
       width: 92%;
@@ -841,9 +835,6 @@
           padding-top: 20px;
         }
       }
-      &:last-of-type{
-        height: 40px;
-      }
       &::before{
         content: "";
         display: block;
@@ -860,12 +851,14 @@
         font-weight: bold;
         border-bottom: 2px solid $color-link;
         &:hover, &:focus{
-          transition: 0.8s;
           opacity: 0.5;
         }
       }
       .emphasis{
         font-size: 2rem;
+        &:first-of-type{
+          text-decoration: line-through;
+        }
       }
     }
     .career-text:first-of-type::before{
@@ -879,10 +872,6 @@
   // futureセクション
   // -----------------------
   .section:nth-of-type(4){
-    padding-top: 0;
-    @include mq('tab'){
-      padding-top: 50px;
-    }
     .section-content{
       margin: 0 auto;
       padding-left: 55px;
