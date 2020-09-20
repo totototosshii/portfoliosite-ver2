@@ -22,13 +22,12 @@ window.onscroll = () => {
     return (window.pageYOffset !== undefined) ? window.pageYOffset : document.documentElement.scrollTop;
   };
 
-  //ボタンの表示・非表示
+  //ボタンの表示・非表示(スクロール量が500より大きいなら表示)
   (getScrolled() > 500) ? topButton.classList.add('is-fadeIn') : topButton.classList.remove('is-fadeIn');
 
-  // スクロールトップボタンクリック時
+  //スクロールトップボタンクリック時
   topButton.onclick = () => {
     let scrolled = getScrolled();
-
     //トップに移動する関数
     (scrolled > 0) ? window.scrollTo({ top: 0, behavior: 'smooth' }) : '';
   };
