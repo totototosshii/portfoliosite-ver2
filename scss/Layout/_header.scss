@@ -3,71 +3,17 @@
   top: 0;
   left: 0;
   width: 100%;
+  height: 70px;
   z-index: 100;
   background: rgba(48, 50, 61, .8);
-  @include mq('sp'){
-    height: 70px;
-  }
   &-inner{
     width: 90%;
-    margin: 0 auto;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #f5f5f5;
-    @include mq('sp'){
-      position: relative;
-    }
-  }
-  // ハンバーガーボタン
-  .drawer-btn{
-    display: block;
-    position: absolute;
-    right: 10px;
-    top: 25%;
-    transition: all .4s;
-    width: 38px;
-    height: 20px;
-    z-index: 100;
-    padding: 0;
-    border:none;
-    &:focus{
-      outline: none;
-    }
-    @include mq('pc'){
-      display: none;
-    }
-    @include mq('tab'){
-      display: none;
-    }
-  }
-  .bar{
-    display: block;
-    transition: all .4s;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background: $color-base;
-    &:nth-of-type(1){
-      top: 0;
-    }
-    &:nth-of-type(2){
-      top: 50%;
-      transform: translateY(-50%);
-    }
-    &:nth-of-type(3){
-      bottom: 0;
-    }
-  }
-  // ハンバーガーボタン下のMenuとCloseのスタイル
-  .drawer_text {
-    width: 100%;
-    position: absolute;
-    bottom: -18px;
-    left: 0;
-    text-align: center;
-    font-size: 10px;
+    margin: 0 auto;
+    color: $color-bright;
   }
   &-logo{
     font-size: 3.2rem;
@@ -126,6 +72,77 @@
       flex-direction: column;
     }
   }
+  // ハンバーガーボタン
+  .drawer-btn{
+    display: block;
+    position: relative;
+    transition: all .4s;
+    width: 38px;
+    height: 24px;
+    z-index: 100;
+    padding: 0;
+    transform: translateY(-8px);
+    &:focus{
+      outline: none;
+    }
+    @include mq('pc'){
+      display: none;
+    }
+    @include mq('tab'){
+      display: none;
+    }
+    // ハンバーガーボタン下のMenuとCloseのスタイル
+    .drawer-text{
+      width: 100%;
+      position: absolute;
+      bottom: -22px;
+      left: 0;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+    .drawer-close{
+      display: none;
+    }
+    // スクリーンリーダー用テキスト
+    .drawer-visuallyHidden{
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      margin: -1px;
+    }
+  }
+  // ３本線
+  .bar{
+    display: block;
+    transition: all .4s;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: currentColor;
+    &::before, &::after{
+      display: block;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: currentColor;
+      transition: all .4s;
+    }
+    &::before{
+      top: -9px;
+    }
+    &::after{
+      top: 9px;
+    }
+  }
 }
 
 // SP版の制作実績ページの背景透過無し
@@ -137,28 +154,28 @@
   }
 }
 
-// jsで変更される箇所
+// -----------------------
+// JSで変更される箇所
+// -----------------------
 .header-links.is-active{
   left: 0;
 }
-.drawer-btn.is-active .bar:nth-of-type(1){
+.drawer-btn.is-active .bar{
+  background-color: transparent;
+}
+.drawer-btn.is-active .bar::before{
   transform: translateY(9px) rotate(-315deg);
 }
-.drawer-btn.is-active .bar:nth-of-type(2){
-  opacity: 0;
-}
-.drawer-btn.is-active .bar:nth-of-type(3){
+.drawer-btn.is-active .bar::after{
   transform: translateY(-9px) rotate(315deg);
 }
-.drawer_menu_text.is-active {
+.drawer-menuText.is-active{
   display: none;
 }
-.js-drawer_close.is-active {
-  display: block;
+// デフォルトよりネストが浅いのでimportantを付与
+.drawer-close.is-active{
+  display: block !important;
 }
-.js-drawer_close {
-  display: none;
-}
-body.noScroll {
+body.noScroll{
   overflow: hidden;
 }

@@ -31,12 +31,11 @@
             );
           ?>
         </div><!-- /.header-links -->
-        <button class="drawer-btn">
+        <button type="button" class="drawer-btn">
           <span class="bar"></span><!-- /.bar -->
-          <span class="bar"></span><!-- /.bar -->
-          <span class="bar"></span><!-- /.bar -->
-          <span class="drawer_menu_text drawer_text">Menu</span><!-- /.drawer_menu_text -->
-          <span class="js-drawer_close drawer_text">Close</span><!-- /.js-drawer_close -->
+          <span class="drawer-menuText drawer-text">Menu</span><!-- /.drawer-menuText -->
+          <span class="drawer-close drawer-text">Close</span><!-- /.drawer-close-->
+          <span class="drawer-visuallyHidden">メニューを開閉する</span><!-- /.drawer-visuallyHidden -->
         </button><!-- /.drawer-btn -->
       </div><!-- /.header-inner -->
     </header><!-- /.header -->
