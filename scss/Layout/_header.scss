@@ -35,14 +35,10 @@
     &:focus{
       outline: none;
     }
-  }
-  @include mq('pc'){
-    .drawer-btn{
+    @include mq('pc'){
       display: none;
     }
-  }
-  @include mq('tab'){
-    .drawer-btn{
+    @include mq('tab'){
       display: none;
     }
   }
@@ -89,7 +85,6 @@
     }
   }
   &-menu{
-    font-size: 1.6rem;
     line-height: 70px;
     @include mq('sp'){
       position: absolute;
