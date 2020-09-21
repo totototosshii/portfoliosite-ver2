@@ -162,12 +162,12 @@
 }
 .drawer-btn.is-active .bar{
   background-color: transparent;
-}
-.drawer-btn.is-active .bar::before{
-  transform: translateY(9px) rotate(-315deg);
-}
-.drawer-btn.is-active .bar::after{
-  transform: translateY(-9px) rotate(315deg);
+  &::before{
+    transform: translateY(9px) rotate(-315deg);
+  }
+  &::after{
+    transform: translateY(-9px) rotate(315deg);
+  }
 }
 .drawer-menuText.is-active{
   display: none;
