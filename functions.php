@@ -5,23 +5,36 @@
  * @codex https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/add_theme_support
  */
 
-function my_setup() {
-  add_theme_support( 'post-thumbnails' );			 /* アイキャッチ */
-  add_theme_support( 'automatic-feed-links' ); /* RSSフィード */
-  add_theme_support( 'title-tag' ); 					 /* タイトルタグ自動生成 */
-  add_theme_support( 'html5', array( 					 /* HTML5のタグで出力 */
+/* テーマのセットアップ */
+function my_theme_setup() {
+  // <head>内にRSSフィードリンクを出力
+  add_theme_support( 'automatic-feed-links' );
+  // タイトルタグを自動生成
+  add_theme_support( 'title-tag' );
+  // HTML5のタグで出力
+  add_theme_support( 'html5',
+  array(
     'search-form',
     'comment-form',
     'comment-list',
     'gallery',
-    'caption',
-  ) );
-  if ( ! isset ($content_width ) ) {					 /* コンテンツの横幅をセット */
-    $content_width = 1180;
-	}
-  add_theme_support( 'responsive-embeds' );		 /* 埋め込みコンテンツレスポンシブ */
+    'caption'
+    )
+  );
+  // アイキャッチ画像を有効化
+  add_theme_support( 'post-thumbnails' );
+  // ブロックエディター用のCSSを有効化
+  add_theme_support( 'wp-block-styles' );
+  // 埋め込みコンテンツをレスポンシブ対応に
+  add_theme_support( 'responsive-embeds' );
 }
-add_action( 'after_setup_theme', 'my_setup' );
+add_action( 'after_setup_theme', 'my_theme_setup' );
+
+
+/* コンテンツ幅の設定 */
+if (!isset($content_width)) {
+  $content_width = 1180;
+}
 
 
 /* メニューの設定 */
@@ -35,7 +48,7 @@ function my_menu_init() {
 add_action( 'init', 'my_menu_init' );
 
 
-// Google FontsとAdobe Fontsの読み込み
+/* 「Google Fonts」と「Adobe Fonts」の読み込み */
 add_action( 'wp_head', function() {
 ?>
 <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap&text=AabCcdefhiklnOoPrSsTtuvW2020&copy;" rel="stylesheet">
@@ -54,11 +67,11 @@ add_action( 'wp_head', function() {
 add_action('wp_head', 'script_fa_cdn');
 
 
-// Font Awesomeの読み込み
+/* 「Font Awesome」の読み込み */
 function script_fa_cdn(){
   $link = <<<EOT
-<script src="https://kit.fontawesome.com/cba31e06f6.js" crossorigin="anonymous"></script>
-EOT;
+  <script src="https://kit.fontawesome.com/cba31e06f6.js" crossorigin="anonymous"></script>
+  EOT;
   echo $link;
 };
 
@@ -89,7 +102,7 @@ function my_scripts() {
 add_action( 'wp_enqueue_scripts', 'my_scripts' );
 
 
-/* contactform7の読み込み制限 */
+/* お問い合わせページを除き「Contact Form 7」を読み込ませない */
 function cf7_limitation() {
     add_filter( 'wpcf7_load_js', '__return_false' );
     add_filter( 'wpcf7_load_css', '__return_false' );
@@ -105,7 +118,7 @@ function cf7_limitation() {
 add_action( 'template_redirect', 'cf7_limitation' );
 
 
-/* お問い合わせページを除き、「reCAPTCHA」を読み込ませない */
+/* お問い合わせページを除き「reCAPTCHA」を読み込ませない */
 function load_recaptcha_js() {
   if ( ! is_page( 'contact' ) ) {
     wp_deregister_script( 'google-recaptcha' );
