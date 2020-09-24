@@ -12,14 +12,14 @@
     <meta property="og:description" content="<?php bloginfo('description'); ?>">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="google-site-verification" content="jwx1KoPFlEZU1ELY9fcc927Wx7vSHi5hoaKkAZFwPd4" />
-    <?php wp_head(); ?>
-    <?php if( is_user_logged_in() ) : ?>
+    <?php if(is_user_logged_in()) : ?>
       <style type="text/css">
         .header {
           margin-top: 32px;
         }
       </style>
     <?php endif; ?>
+    <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
     <header class="header">
