@@ -10,9 +10,10 @@
   font-size: 1.8rem;
   font-weight: bold;
   letter-spacing: .11em;
+  box-shadow: $box-shadow;
   margin: 0 auto;
   &:hover, &:focus{
-    background-color: #28536B;
+    background-color: $color-hover;
     color: $color-bright;
   }
 }

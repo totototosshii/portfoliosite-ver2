@@ -1,24 +1,30 @@
-// 背景色
-$color-base:#eaf9fb;
-
-// テキストカラー
+// カラー
+$color-base:#EAF9FB;
 $color-dark: #444555;
-$color-bright: #f5f5f5;
-
-// テキストリンク
+$color-bright: #F5F5F5;
 $color-link: #037BFE;
-
-// アクセントカラー(テキスト下線・ボタンカラー)
 $color-accent: #05BBDD;
+$color-hover: #28536B;
+$color-section: #EEE5E9;
+$color-border: rgb(220, 220, 220);
+$color-headerSp:  rgb(88, 89, 98);
+$color-header: rgba(48, 50, 61, .8);
+$color-headerMenu: rgba(248, 140, 45, .8);
+$color-homeFv: rgba(0, 64, 193, .5);
+$color-homeWorksItems: rgba(0, 0, 0, .5);
+$color-gradient1: rgba(0, 64, 193, .7);
+$color-gradient2: rgba(0, 149, 193, .7);
 
 // フォントスタイル
-// $ff-gothic: 'Noto Sans JP', sans-serif;
 $ff-gothic: ryo-gothic-plusn, sans-serif;
-$fz-base: 1.6rem;
 $ff-base: $ff-gothic;
+$fz-base: 1.6rem;
 $fw-base: 500;
 $lh-base: 1.7;
 $ls-base: .08em;
+
+// ボックスシャドウ
+$box-shadow: 0 0 10px 1px rgba(10, 0, 0, .16);
 
 // コンテンツ幅
 $layout-width-inner: 1180px;

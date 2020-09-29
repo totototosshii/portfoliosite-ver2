@@ -82,7 +82,7 @@ function my_styles() {
     'style-css',
     get_template_directory_uri() . '/css/style.css',
     array(),
-    '1.6.9',
+    '1.7.7',
     'all'
   );
 }
