@@ -12,7 +12,7 @@
   →プロフィールページ(これからの事)<br>
   →個別投稿ページ(モックアップ画像と各説明欄)<br>
 ・お問い合わせフォームの機能は「[Contact Form 7](https://contactform7.com/)」で実装｡<br>
-・スクロールトップボタンはJavaScript、ハンバーガーメニューはjQueryで実装｡
+・スクロールトップボタンはJavaScript、ドロワーボタンはjQueryで実装｡
 
 ### 使用言語
 HTML / CSS(SCSS) / jQuery / JavaScript / PHP
