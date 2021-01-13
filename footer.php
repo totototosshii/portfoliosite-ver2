@@ -1,6 +1,6 @@
   <footer class="footer">
     <p class="copyright">
-      &copy; <?php echo date("Y"); ?> <?php bloginfo('name'); ?>
+      &copy; 2020-<?php echo date("Y"); ?> <?php bloginfo('name'); ?>
     </p><!-- /.copyright -->
   </footer><!-- /.footer -->
 
