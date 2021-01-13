@@ -507,7 +507,7 @@ a:hover {
   .skill-icon img {
     background-color: #F5F5F5;
   }
-  .skill-name a, .career-text a {
+  .skill-name a, .career-text a, .single .explanation-text a {
     color: #05bbdd !important;
     border-bottom: 2px solid #05bbdd !important;
   }

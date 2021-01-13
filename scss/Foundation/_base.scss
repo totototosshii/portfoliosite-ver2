@@ -34,7 +34,7 @@ a:hover{
   .skill-icon img{
     background-color: $color-bright;
   }
-  .skill-name a, .career-text a{
+  .skill-name a, .career-text a, .single .explanation-text a{
     color: $color-darkLink !important;
     border-bottom: 2px solid $color-darkLink !important;
   }
