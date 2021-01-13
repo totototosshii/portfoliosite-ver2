@@ -21,3 +21,27 @@ img{
 a:hover{
   transition: all .6s;
 }
+
+// ダークモード設定
+@media (prefers-color-scheme: dark) {
+  body, .section{
+    background-color: $color-darkMode !important;
+    color: $color-bright;
+  }
+  .works-item-img{
+    border: 4px solid $color-bright;
+  }
+  .skill-icon img{
+    background-color: $color-bright;
+  }
+  .skill-name a, .career-text a{
+    color: $color-darkLink !important;
+    border-bottom: 2px solid $color-darkLink !important;
+  }
+  .career-text::before{
+    background-color: #94b8e0 !important;
+  }
+  .left-nav-item .fas{
+    color: $color-darkMode;
+  }
+}
