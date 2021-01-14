@@ -517,6 +517,12 @@ a:hover {
   .left-nav-item .fas {
     color: #333;
   }
+  #wpcf7-f114-p51-o1 {
+    background-color: #ccc !important;
+  }
+  .wpcf7-form {
+    color: #444555 !important;
+  }
 }
 
 .section-inner {
