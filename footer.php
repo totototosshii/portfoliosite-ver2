@@ -1,6 +1,6 @@
   <footer class="footer">
     <p class="copyright">
-      &copy; 2020-<?php echo date("Y"); ?> <?php bloginfo('name'); ?>
+      &copy; 2020-<?php echo date("Y"); ?> t_onodera
     </p><!-- /.copyright -->
   </footer><!-- /.footer -->
 

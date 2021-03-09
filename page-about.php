@@ -264,13 +264,16 @@ Template Name: プロフィール
             <p class="career-head">経歴</p><!-- /.career-head -->
             <dl class="career-item">
               <dt class="career-list">2008年</dt><!-- /.career-list -->
-              <dd class="career-text">工業高校卒業後、地元の製造業に就職して工場勤務。<br>主に工作機械のオペレーター業務を担当し、空気圧制御機器の部品を加工。<br>一時期は切削工具の管理と兼務して書類作成業務も行う。<br>リーマンショック回復後からは３交代勤務で主力製品の生産に携わる。</dd><!-- /.career-text -->
+              <dd class="career-text">工業高校卒業後、地元の製造業に就職して工場勤務。<br>工作機械のオペレーター業務で機械部品を加工。<br>リーマンショック回復後からは３交代勤務で主力製品の生産に携わる。</dd><!-- /.career-text -->
               <dt class="career-list">2018年</dt><!-- /.career-list -->
-              <dd class="career-text">次第に今後の働き方を考えるようになる。<br>年齢的な不安はあるものの、興味のある分野に挑戦したい気持ちが強かったためWeb制作の道を選ぶ。<br>始めにPCスキルを身につけるためにタイピング練習を開始。</dd><!-- /.career-text -->
+              <dd class="career-text">体調不良を機に次第に今後の働き方を考えるようになる。<br>年齢的な不安はあるものの、興味のある分野に挑戦したい気持ちが強かったため、<br>Web制作の道を進む事にしました💨
+            </dd><!-- /.career-text -->
               <dt class="career-list">2019年</dt><!-- /.career-list -->
-              <dd class="career-text">交代勤務を続けながら平日は30分〜１時間、休日は３時間の独学。<br>HTML / CSSをProgate、ドットインストールで独学し、初めての言語に難しさを痛感した反面、<br>思い通りの結果が表示させられた時の喜びを実感。<br>学習環境と転職先を考慮し、仙台に拠点を移す事を決意。<br>10月に前職を退職後、プログラミングスクールに通う。</dd><!-- /.career-text -->
+              <dd class="career-text">交代勤務を続けながら平日は30分〜１時間、休日は３時間の学習✏️<br>10月に前職を退職後、仙台に拠点を移してプログラミングスクールに通う。</dd><!-- /.career-text -->
               <dt class="career-list">2020年</dt><!-- /.career-list -->
-              <dd class="career-text">プログラミングスクール以外にも学習の幅を広げる。<br>アロキャンへの参加、デイトラ、クリ★スタ、忍者CODEなどの教材に取り組みながらポートフォリオの作成に取り掛かりました。<br>７月：ポートフォリオ作成と並行して転職活動開始。<br>９月：ココナラで初のコーディング案件(LP)を獲得。<br><br><span class="emphasis">一緒に働かせて頂ける仙台のWeb制作会社を探しております！！</span><br><span class="emphasis">転職先決まりました！！</span><br><br>11月：仙台のWeb制作会社にエンジニアとして就業開始。</dd><!-- /.career-text -->
+              <dd class="career-text">プログラミングスクール以外にも学習の幅を広げる。<br>アロキャンへの参加、デイトラ、クリ★スタ、忍者CODEなどの教材に取り組みながらポートフォリオ作成。<br><br>７月：ポートフォリオ作成と並行して転職活動開始。<br>９月：ココナラで初のコーディング案件(LP)を獲得。<br><br><span class="emphasis">一緒に働かせて頂ける仙台のWeb制作会社を探しております！！</span><br><span class="emphasis">転職先決まりました！！</span><br><br>11月：仙台のWeb制作会社にエンジニアとして就業開始。</dd><!-- /.career-text -->
+              <dt class="career-list">2021年</dt><!-- /.career-list -->
+              <dd class="career-text">更新業務と並行しながら、静的サイトからWordPressサイトまで日々コーディング中💻</dd><!-- /.career-text -->
             </dl><!-- /.career-item -->
           </div><!-- /.career -->
         </div><!-- /.section-content -->
