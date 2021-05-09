@@ -27,7 +27,7 @@ Template Name: プロフィール
         <p class="section-title-ja">− 私について −</p><!-- /.section-title-ja -->
         <div class="section-content">
           <figure class="profile-img">
-            <img src="<?php echo esc_url(get_theme_file_uri('images/about-pr.png')); ?>" alt="サイト製作者の顔写真">
+            <img src="<?php echo esc_url(get_theme_file_uri('images/profile.png')); ?>" alt="サイト製作者の顔写真">
           </figure><!-- /.profile-img -->
           <div class="profile-content">
             <!-- 投稿があればprofile-messageブロック以下を表示 -->
